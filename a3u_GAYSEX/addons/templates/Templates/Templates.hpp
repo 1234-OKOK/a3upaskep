@@ -4,9 +4,9 @@ class Templates {
     {
         side = "Reb";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
-        name = "3CBF_OFN"; 
+        name = "SUPASKEP OFN"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "USA_reb";
-        description = "Boy kissers";
+        description = "Steers and Queers";
     };
 };

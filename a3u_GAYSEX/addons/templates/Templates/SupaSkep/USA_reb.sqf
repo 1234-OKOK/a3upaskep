@@ -125,8 +125,6 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["RHSGREF_A29B_HIDF", ["MIG",1]]
 ]] call _fnc_saveToTemplate;
 
-#include "3CBF_Reb_Vehicle_Attributes.sqf"
-
 ///////////////////////////
 //  Rebel Starting Gear  //
 ///////////////////////////
