@@ -6,30 +6,30 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 ["name", "USA"] call _fnc_saveToTemplate;
 
-["flag", "Flag_FIA_F"] call _fnc_saveToTemplate;
+["flag", "Flag_US_F"] call _fnc_saveToTemplate;
 ["flagTexture", "a3\data_f\flags\flag_fia_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_USA"] call _fnc_saveToTemplate;
 
 
 ["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["UK3CB_CW_US_B_LATE_M1025_Unarmed", "UK3CB_CW_US_B_LATE_M998_2DR"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["UK3CB_CW_US_B_LATE_M1025_M2"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["UK3CB_CW_US_B_LATE_M939"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["UK3CB_CW_US_B_LATE_M1025_TOW"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["UK3CB_CW_US_B_LATE_M1025_MK19"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["UK3CB_CW_US_B_LATE_M151_Jeep_Open", "UK3CB_CW_US_B_LATE_M151_Jeep_Closed"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_CW_US_B_LATE_M1025_Unarmed", "UK3CB_CW_US_B_LATE_M998_4DR", "UK3CB_CW_US_B_LATE_M998_2DR"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["UK3CB_CW_US_B_LATE_M939_Open", "UK3CB_CW_US_B_LATE_M939"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["UK3CB_MDF_B_M1151_GPK_M240"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_MK19"]] call _fnc_saveToTemplate;
 
-["vehiclesBoat", ["UK3CB_TKA_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
+["vehiclesBoat", ["UK3CB_MDF_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
 
-["vehiclesPlane", ["UK3CB_FIA_B_Cessna_T41_Armed", "UK3CB_CW_US_B_LATE_UH1H_MED"]] call _fnc_saveToTemplate;
+["vehiclesPlane", ["UK3CB_CW_US_B_LATE_Cessna_T41_Armed", "UK3CB_CW_US_B_LATE_UH1H_M240"]] call _fnc_saveToTemplate;
 
 ["vehiclesCivCar", []] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", []] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", []] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", []] call _fnc_saveToTemplate;
 
-["staticMGs", ["UK3CB_LDF_I_M2_TriPod"]] call _fnc_saveToTemplate;
-["staticAT", ["UK3CB_CW_US_B_LATE_TOW_TriPod"]] call _fnc_saveToTemplate;
-["staticAA", ["UK3CB_CW_US_B_LATE_Stinger_AA_pod"]] call _fnc_saveToTemplate;
+["staticMGs", ["UK3CB_CW_US_B_LATE_M240_High", "UK3CB_CW_US_B_LATE_M240_Low"]] call _fnc_saveToTemplate;
+["staticAT", ["UK3CB_CW_US_B_LATE_MK19_TriPod"]] call _fnc_saveToTemplate;
+["staticAA", ["UK3CB_CW_US_B_LATE_M2_TriPod", "UK3CB_CW_US_B_LATE_M2_MiniTripod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["UK3CB_CW_US_B_LATE_M252"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "rhs_12Rnd_m821_HE"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
@@ -88,36 +88,36 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //////////////////////////////////////
 
 ["blackMarketStock", [
-    ["UK3CB_CW_US_B_LATE_M113_M240", 2500, "STATICAA", {tierWar > 3}],
+    ["UK3CB_CW_US_B_LATE_Stinger_AA_pod", 2500, "STATICAA", {tierWar > 3}],
     ["UK3CB_CW_US_B_LATE_TOW_TriPod", 3000, "STATICAT", {tierWar > 3}],
-    ["RHS_MK19_TriPod_USMC_WD", 3000, "STATICMG", {tierWar > 3}],
+    ["UK3CB_CW_US_B_LATE_M119", 3000, "STATICMG", {tierWar > 3}],
 
-    ["UK3CB_ARD_I_Hilux_Mortar", 15000, "ARTILLERY", {tierWar > 5}],
-    ["UK3CB_ARD_I_Hilux_Rocket", 25000, "ARTILLERY", {tierWar > 7}],
-    ["UK3CB_ARD_I_Hilux_Rocket_Arty", 30000, "ARTILLERY", {tierWar > 8}],
+    ["UK3CB_FIA_B_M939_MLRS", 15000, "ARTILLERY", {tierWar > 5}],
+    ["UK3CB_CW_US_B_LATE_M109", 25000, "ARTILLERY", {tierWar > 7}],
+    ["UK3CB_CW_US_B_LATE_M270_MLRS_HE", 30000, "ARTILLERY", {tierWar > 8}],
 
-    ["UK3CB_ARD_I_Hilux_Zu23", 1750, "CAR", {tierWar > 2}],
-    ["UK3CB_ARD_I_Hilux_GMG", 2500, "CAR", {tierWar > 2}],
-    ["UK3CB_ARD_I_Hilux_Metis", 3500, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M113_unarmed", 1750, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M113_M240", 2500, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M1025_TOW", 3500, "CAR", {tierWar > 2}],
     
-    ["UK3CB_KRG_I_M113tank_unarmed", 1750, "APC", {true}],
-    ["UK3CB_KRG_I_M113tank_M2_90", 2500, "APC", {true}],
-    ["UK3CB_KRG_I_M113tank_MK19_90", 4500, "CAR", {true}],
+    ["UK3CB_CW_US_B_LATE_LAV25_HQ", 1750, "APC", {true}],
+    ["UK3CB_CW_US_B_LATE_M113_M2", 2500, "APC", {true}],
+    ["UK3CB_CW_US_B_LATE_M113_MK19", 4500, "CAR", {true}],
 
-    ["UK3CB_I_G_BMP1", 9000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
-    ["UK3CB_I_G_BMP2K", 12500, "APC", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["UK3CB_CW_US_B_LATE_AAV", 7000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["UK3CB_CW_US_B_LATE_M2A2", 12500, "APC", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
-    ["UK3CB_I_G_T34", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["UK3CB_I_G_T55", 13000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["UK3CB_MDF_I_M60A3", 17500, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["UK3CB_CW_US_B_LATE_LAV25", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+    ["UK3CB_CW_US_B_LATE_M60a3", 13000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["UK3CB_CW_US_B_LATE_M1A1", 17500, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
-    ["UK3CB_I_G_ZsuTank", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["UK3CB_KRG_B_M270_Avenger", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
 
-    ["RHSGREF_A29B_HIDF", 17500, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["UK3CB_MDF_I_Mystere_CAS1", 22500, "PLANE", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["UK3CB_CW_US_B_LATE_AH1Z_GS", 17500, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_A10", 22500, "PLANE", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
 
-    ["UK3CB_ADA_I_UH1H_M240", 13500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["UK3CB_ADA_I_UH1H_GUNSHIP", 20000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
+    ["UK3CB_CW_US_B_LATE_UH1H_GUNSHIP", 13500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_AH64_GS", 20000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
@@ -213,22 +213,42 @@ private _rebUniforms = [
 /////////////////////
 
 ["faces", [
-    "GreekHead_A3_02",
-    "GreekHead_A3_03",
-    "GreekHead_A3_04",
-    "GreekHead_A3_05",
-    "GreekHead_A3_06",
-    "GreekHead_A3_07",
-    "GreekHead_A3_08",
-    "GreekHead_A3_09",
-    "GreekHead_A3_11",
-    "GreekHead_A3_12",
-    "GreekHead_A3_13",
-    "GreekHead_A3_14",
+    "WhiteHead_01",
+    "WhiteHead_02",
+    "WhiteHead_03",
+    "WhiteHead_04",
+    "WhiteHead_05",
+    "WhiteHead_06",
+    "WhiteHead_07",
+    "WhiteHead_08",
+    "WhiteHead_09",
+    "WhiteHead_10",
+    "WhiteHead_11",
+    "WhiteHead_12",
+    "WhiteHead_13",
+    "WhiteHead_14",
+    "WhiteHead_15",
+    "WhiteHead_16",
+    "WhiteHead_17",
+    "WhiteHead_18",
+    "WhiteHead_19",
+    "WhiteHead_20",
+    "WhiteHead_21",
+    "WhiteHead_22",
+    "WhiteHead_23",
+    "WhiteHead_24",
+    "WhiteHead_25",
+    "WhiteHead_26",
+    "WhiteHead_27",
+    "WhiteHead_28",
+    "WhiteHead_29",
+    "WhiteHead_30",
+    "WhiteHead_31",
+    "WhiteHead_32",
     "Ioannou",
     "Mavros"
 ]] call _fnc_saveToTemplate;
-["voices", ["Male01GRE","Male02GRE","Male03GRE","Male04GRE","Male05GRE","Male06GRE"]] call _fnc_saveToTemplate;
+["voices", ["Male01ENG","Male02ENG","Male03ENG","Male04ENG","Male05ENG","Male06ENG","Male07ENG","Male08ENG","Male09ENG","Male10ENG","Male11ENG","Male12ENG"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
