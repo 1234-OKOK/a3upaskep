@@ -131,23 +131,23 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 private _initialRebelEquipment = [
     "rhsusf_weap_m1911a1", "rhsusf_mag_7x45acp_MHP",
-    "rhsusf_weap_m9", "rhsusf_mag_15Rnd_9x19_JHP",
-    "UK3CB_M14", "UK3CB_M60", "UK3CB_M60_100rnd_762x51",
-    "UK3CB_M16A1_LSW", "UK3CB_M1903A1_3006_5rnd_Magazine", "UK3CB_M1903A1_3006_5rnd_Magazine_RT",
-    "UK3CB_M16A1", "rhsgref_30rnd_1143x23_M1911B_SMG", "rhsgref_30rnd_1143x23_M1T_SMG",
-    "UK3CB_M16A2_UGL", "rhsgref_8Rnd_762x63_M2B_M1rifle", "rhsgref_8Rnd_762x63_Tracer_M1T_M1rifle",
-    "UK3CB_M16A2", "UK3CB_M16_30rnd_556x45_R",
+    "UK3CB_BHP", "UK3CB_BHP_9_13Rnd",
+    "UK3CB_Enfield", "UK3CB_Enfield_10rnd_Mag", "UK3CB_Enfield_10rnd_Mag_RT",
+    "UK3CB_M1903A1", "UK3CB_M1903A1_3006_5rnd_Magazine", "UK3CB_M1903A1_3006_5rnd_Magazine_RT",
+    "rhs_weap_m3a1", "rhsgref_30rnd_1143x23_M1911B_SMG", "rhsgref_30rnd_1143x23_M1T_SMG",
+    "rhs_weap_m1garand_sa43", "rhsgref_8Rnd_762x63_M2B_M1rifle", "rhsgref_8Rnd_762x63_Tracer_M1T_M1rifle",
+    "rhs_weap_M590_5RD", "rhsusf_5Rnd_00Buck", "rhsusf_5Rnd_Slug",
     "rhs_grenade_anm8_mag", "rhs_grenade_mki_mag", "rhs_grenade_mkii_mag",
-    ["rhs_weap_rpg18", 5], ["rhs_weap_fim92", 5],
+    ["rhs_weap_rpg18", 5], ["rhs_weap_m72a7", 5],
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
-    "UK3CB_CW_US_B_LATE_B_MEDIC",
+    "B_FieldPack_oli",
     "Binocular",
     "rhs_weap_rsp30_white","rhs_mag_rsp30_white",
     "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
     "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
     "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
-    "UK3CB_CW_US_B_LATE_V_PASGT_Rif_Vest","UK3CB_CW_US_B_LATE_V_PASGT_MG_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Medic_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Crew_Vest", "rhsgref_alice_webbing",
-    "UK3CB_CW_US_B_LATE_B_RIF_03", "UK3CB_CW_US_B_LATE_B_RIF_02", "UK3CB_CW_US_B_LATE_B_RIF_01", "rhsgref_hidf_alicepack"
+    "rhsgref_chicom","V_BandollierB_oli",
+    "UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
@@ -158,13 +158,39 @@ _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
-    "UK3CB_CW_US_B_LATE_U_CombatUniform_01_WDL",
-    "UK3CB_CW_US_B_LATE_U_CombatUniform_02_WDL",
-    "UK3CB_CW_US_B_LATE_U_CombatUniform_03_WDL",
-    "UK3CB_CW_US_B_LATE_U_CombatUniform_04_WDL",
+    "U_IG_Guerilla2_1",
+    "U_IG_Guerilla2_2",
+    "U_IG_Guerilla2_3",
+    "U_IG_Guerrilla_6_1",
+    "U_I_G_resistanceLeader_F",
+    "U_I_L_Uniform_01_deserter_F",
     "rhsgref_uniform_3color_desert",
-    "UK3CB_CW_US_B_LATE_U_JNR_OFFICER_Uniform_01_WDL",
-    "UK3CB_CW_US_B_LATE_U_OFFICER_Uniform_01_WDL"
+    "rhsgref_uniform_dpm",
+    "rhsgref_uniform_dpm_olive",
+    "rhsgref_uniform_og107",
+    "rhsgref_uniform_og107_erdl",
+    "rhsgref_uniform_tigerstripe",
+    "rhsgref_uniform_woodland",
+    "rhsgref_uniform_woodland_olive",
+    "UK3CB_CHD_I_U_CombatSmock_09",
+    "UK3CB_CHD_I_U_CombatSmock_12",
+    "UK3CB_CHD_I_U_CombatUniform_08",
+    "UK3CB_LNM_I_U_CombatSmock_21",
+    "UK3CB_LSM_I_U_CombatSmock_05",
+    "UK3CB_LSM_I_U_CombatSmock_04",
+    "UK3CB_LSM_I_U_CombatSmock_11",
+    "UK3CB_LSM_I_U_CombatSmock_10",
+    "UK3CB_LSM_I_U_Crew_CombatSmock_12",
+    "UK3CB_LSM_I_U_CombatSmock_27",
+    "UK3CB_LSM_I_U_CombatSmock_29",
+    "UK3CB_LSM_I_U_CombatSmock_25",
+    "UK3CB_LSM_I_U_CombatUniform_07",
+    "UK3CB_LSM_I_U_CombatUniform_09",
+    "UK3CB_LNM_I_U_CombatUniform_15",
+    "UK3CB_LSM_I_U_CombatUniform_06",
+    "UK3CB_LSM_I_U_CombatUniform_02",
+    "UK3CB_LSM_I_U_CombatUniform_03",
+    "UK3CB_LSM_I_U_CombatUniform_01"
 ];
 
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;

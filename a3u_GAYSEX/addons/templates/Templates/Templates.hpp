@@ -4,9 +4,20 @@ class Templates {
     {
         side = "Reb";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
-        name = "SUPASKEP OFN"; 
+        name = "THE UNITED STATES ARMY"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "USA_reb";
-        description = "Steers and Queers";
+        description = "One of the militaries of all time";
+    };
+
+    class 3CBF_Base;
+    class 3CBF_OFN : 3CBF_Base
+    {
+        side = "Occ";
+        flagTexture = "a3\data_f\flags\flag_fia_co.paa";
+        name = "THE ORGANIZATION OF FREE NATIONS"; 
+        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
+        file = "OFN_reb";
+        description = "The Leader of the Free World;
     };
 };
