@@ -132,20 +132,15 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _initialRebelEquipment = [
     "rhsusf_weap_m1911a1", "rhsusf_mag_7x45acp_MHP",
     "rhsusf_weap_m9", "rhsusf_mag_15Rnd_9x19_JHP",
-    "UK3CB_M14", "UK3CB_M60", "UK3CB_M60_100rnd_762x51",
-    "UK3CB_M16A1_LSW", "UK3CB_M1903A1_3006_5rnd_Magazine", "UK3CB_M1903A1_3006_5rnd_Magazine_RT",
-    "UK3CB_M16A1", "rhsgref_30rnd_1143x23_M1911B_SMG", "rhsgref_30rnd_1143x23_M1T_SMG",
-    "UK3CB_M16A2_UGL", "rhsgref_8Rnd_762x63_M2B_M1rifle", "rhsgref_8Rnd_762x63_Tracer_M1T_M1rifle",
-    "UK3CB_M16A2", "UK3CB_M16_30rnd_556x45_R",
-    "rhs_grenade_anm8_mag", "rhs_grenade_mki_mag", "rhs_grenade_mkii_mag",
-    ["rhs_weap_rpg18", 5], ["rhs_weap_fim92", 5],
-    ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
+    "UK3CB_M14", "UK3CB_M14_20rnd_762x51_RT",
+    "UK3CB_MP5A3", "UK3CB_MP5_30Rnd_9x19_Magazine_RT",
+    "UK3CB_M60", "UK3CB_M60_100rnd_762x51_RT",
+    "UK3CB_M16A2", "UK3CB_M16_30rnd_556x45_RT",
+    "rhs_mag_an_m14_th3", "rhs_mag_an_m8hc", "rhs_grenade_m15_mag", "rhs_mag_m67", "rhs_grenade_mkii_mag",
+    ["rhs_weap_m72a7", 5], ["rhs_weap_fim92", 0],
+    ["rhsusf_m112_mag", 10], ["DemoCharge_Remote_Mag", 10], ["rhsusf_m112x4_mag", 3], ["SatchelCharge_Remote_Mag", 3],
     "UK3CB_CW_US_B_LATE_B_MEDIC",
     "Binocular",
-    "rhs_weap_rsp30_white","rhs_mag_rsp30_white",
-    "rhs_weap_rsp30_green","rhs_mag_rsp30_green",
-    "rhs_weap_rsp30_red", "rhs_mag_rsp30_red",
-    "rhs_mag_nspd", "rhs_mag_nspn_yellow", "rhs_mag_nspn_green", "rhs_mag_nspn_red",
     "UK3CB_CW_US_B_LATE_V_PASGT_Rif_Vest","UK3CB_CW_US_B_LATE_V_PASGT_MG_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Medic_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Crew_Vest", "rhsgref_alice_webbing",
     "UK3CB_CW_US_B_LATE_B_RIF_03", "UK3CB_CW_US_B_LATE_B_RIF_02", "UK3CB_CW_US_B_LATE_B_RIF_01", "rhsgref_hidf_alicepack"
 ];
@@ -178,7 +173,10 @@ private _rebUniforms = [
     "rhs_headband",
     "UK3CB_LNM_B_H_BoonieHat_FLK_01",
     "UK3CB_LNM_B_H_BoonieHat_FLK_02",
-    "UK3CB_LNM_B_H_BoonieHat_FLK_03"
+    "UK3CB_LNM_B_H_BoonieHat_FLK_03",
+    "rhsgref_helmet_pasgt_3color_desert",
+    "UK3CB_CW_US_B_LATE_H_PASGT_01_WDL",
+    "UK3CB_CW_US_B_LATE_H_PASGT_02_WDL"
 
 ]] call _fnc_saveToTemplate;
 
