@@ -132,17 +132,18 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _initialRebelEquipment = [
     "rhsusf_weap_m1911a1", "rhsusf_mag_7x45acp_MHP",
     "rhsusf_weap_m9", "rhsusf_mag_15Rnd_9x19_JHP",
-    "UK3CB_M14", "UK3CB_M14_20rnd_762x51_RT",
+    "UK3CB_M21", "UK3CB_DMR_20rnd_762x51_RT",
     "UK3CB_MP5A3", "UK3CB_MP5_30Rnd_9x19_Magazine_RT",
     "UK3CB_M60", "UK3CB_M60_100rnd_762x51_RT",
     "UK3CB_M16A2", "UK3CB_M16_30rnd_556x45_RT",
+    "rhs_weap_m3a1", "rhsgref_30rnd_1143x23_M1T_SMG",
     "rhs_mag_an_m14_th3", "rhs_mag_an_m8hc", "rhs_grenade_m15_mag", "rhs_mag_m67", "rhs_grenade_mkii_mag",
-    ["rhs_weap_m72a7", 5], ["rhs_weap_fim92", 0],
+    ["rhs_weap_m72a7", 5], ["rhs_weap_fim92", 1],
     ["rhsusf_m112_mag", 10], ["DemoCharge_Remote_Mag", 10], ["rhsusf_m112x4_mag", 3], ["SatchelCharge_Remote_Mag", 3],
     "UK3CB_CW_US_B_LATE_B_MEDIC",
     "Binocular",
     "UK3CB_CW_US_B_LATE_V_PASGT_Rif_Vest","UK3CB_CW_US_B_LATE_V_PASGT_MG_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Medic_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Crew_Vest", "rhsgref_alice_webbing",
-    "UK3CB_CW_US_B_LATE_B_RIF_03", "UK3CB_CW_US_B_LATE_B_RIF_02", "UK3CB_CW_US_B_LATE_B_RIF_01", "rhsgref_hidf_alicepack"
+    "UK3CB_CW_US_B_LATE_B_RIF_03", "UK3CB_CW_US_B_LATE_B_RIF_02", "UK3CB_CW_US_B_LATE_B_RIF_01", "B_Kitbag_rgr", "rhsgref_hidf_alicepack"
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
