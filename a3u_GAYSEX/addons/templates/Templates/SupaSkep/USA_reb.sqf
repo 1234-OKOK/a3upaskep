@@ -11,16 +11,16 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagMarkerType", "flag_USA"] call _fnc_saveToTemplate;
 
 
-["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["UK3CB_B_M1030_HIDF", "UK3CB_B_YAVA_HIDF"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["UK3CB_CW_US_B_LATE_M151_Jeep_Open", "UK3CB_CW_US_B_LATE_M151_Jeep_Closed"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["UK3CB_CW_US_B_LATE_M1025_Unarmed", "UK3CB_CW_US_B_LATE_M998_4DR", "UK3CB_CW_US_B_LATE_M998_2DR"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["UK3CB_CW_US_B_LATE_M939_Open", "UK3CB_CW_US_B_LATE_M939"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["UK3CB_MDF_B_M1151_GPK_M240"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_CW_US_B_LATE_M1025_Unarmed", "UK3CB_CW_US_B_LATE_M998_4DR", "UK3CB_CW_US_B_LATE_M998_2DR", ]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["UK3CB_CW_US_B_LATE_M939_Open", "UK3CB_CW_US_B_LATE_M939", "rhsgref_hidf_assault_boat"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["UK3CB_MDF_B_M1151_GPK_M240, UK3CB_CW_US_B_LATE_M151_Jeep_HMG"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_MK19"]] call _fnc_saveToTemplate;
 
 ["vehiclesBoat", ["UK3CB_MDF_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
 
-["vehiclesPlane", ["UK3CB_CW_US_B_LATE_Cessna_T41_Armed", "UK3CB_CW_US_B_LATE_UH1H_M240"]] call _fnc_saveToTemplate;
+["vehiclesPlane", ["UK3CB_CW_US_B_LATE_UH1H", "UK3CB_CW_US_B_LATE_UH1H_MED", "UK3CB_B_C47_HIDF"]] call _fnc_saveToTemplate;
 
 ["vehiclesCivCar", []] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", []] call _fnc_saveToTemplate;
@@ -88,35 +88,45 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //////////////////////////////////////
 
 ["blackMarketStock", [
-    ["UK3CB_CW_US_B_LATE_Stinger_AA_pod", 2500, "STATICAA", {tierWar > 3}],
-    ["UK3CB_CW_US_B_LATE_TOW_TriPod", 3000, "STATICAT", {tierWar > 3}],
-    ["UK3CB_CW_US_B_LATE_M119", 3000, "STATICMG", {tierWar > 3}],
+    ["UK3CB_CW_US_B_LATE_MK19_TriPod", 2000, "STATICAT", {tierWar > 3}],
+    ["UK3CB_CW_US_B_LATE_Stinger_AA_pod", 2000, "STATICAA", {tierWar > 3}],
+    ["UK3CB_CW_US_B_LATE_TOW_TriPod", 2000, "STATICAT", {tierWar > 3}],
+    ["UK3CB_CW_US_B_LATE_M119", 4000, "STATICMG", {tierWar > 3}],
 
-    ["UK3CB_FIA_B_M939_MLRS", 15000, "ARTILLERY", {tierWar > 5}],
-    ["UK3CB_CW_US_B_LATE_M109", 25000, "ARTILLERY", {tierWar > 7}],
-    ["UK3CB_CW_US_B_LATE_M270_MLRS_HE", 30000, "ARTILLERY", {tierWar > 8}],
+    ["UK3CB_FIA_B_M939_MLRS", 10000, "ARTILLERY", {tierWar > 5}],
+    ["UK3CB_CW_US_B_LATE_M109", 20000, "ARTILLERY", {tierWar > 7}],
+    ["UK3CB_CW_US_B_LATE_M270_MLRS_HE", 20000, "ARTILLERY", {tierWar > 8}],
+    ["UK3CB_CW_US_B_LATE_M270_MLRS_CLUSTER", 20000, "ARTILLERY", {tierWar > 8}],
 
-    ["UK3CB_CW_US_B_LATE_M113_unarmed", 1750, "CAR", {tierWar > 2}],
-    ["UK3CB_CW_US_B_LATE_M113_M240", 2500, "CAR", {tierWar > 2}],
-    ["UK3CB_CW_US_B_LATE_M1025_TOW", 3500, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M113_unarmed", 2000, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M113_AMB", 2000, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M113_M240", 3000, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M151_Jeep_TOW", 3000, "CAR", {tierWar > 2}],
+    ["UK3CB_CW_US_B_LATE_M1025_TOW", 4000, "CAR", {tierWar > 2}],
     
-    ["UK3CB_CW_US_B_LATE_LAV25_HQ", 1750, "APC", {true}],
-    ["UK3CB_CW_US_B_LATE_M113_M2", 2500, "APC", {true}],
-    ["UK3CB_CW_US_B_LATE_M113_MK19", 4500, "CAR", {true}],
+    ["UK3CB_CW_US_B_LATE_LAV25_HQ", 3000, "APC", {true}],
+    ["UK3CB_CW_US_B_LATE_M113_M2", 4000, "APC", {true}],
+    ["UK3CB_CW_US_B_LATE_M113_MK19", 4000, "CAR", {true}],
 
-    ["UK3CB_CW_US_B_LATE_AAV", 7000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
-    ["UK3CB_CW_US_B_LATE_M2A2", 12500, "APC", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["UK3CB_CW_US_B_LATE_AAV", 6000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["UK3CB_CW_US_B_LATE_M2A2", 12000, "APC", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
     ["UK3CB_CW_US_B_LATE_LAV25", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["UK3CB_CW_US_B_LATE_M60a3", 13000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["UK3CB_CW_US_B_LATE_M1A1", 17500, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["UK3CB_CW_US_B_LATE_M60a3", 14000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["UK3CB_CW_US_B_EARLY_M1A1", 18000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
-    ["UK3CB_KRG_B_M270_Avenger", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["UK3CB_KRG_B_M270_Avenger", 8000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
 
-    ["UK3CB_CW_US_B_LATE_AH1Z_GS", 17500, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["UK3CB_CW_US_B_LATE_A10", 22500, "PLANE", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
+    ["UK3CB_CW_US_B_LATE_UH1H_M240", 6000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_Cessna_T41_Armed", 8000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_B_AC47_HIDF", 8000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_CH47", 10000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_UH60M", 10000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["RHSGREF_A29B_HIDF", 12000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_AH1Z_GS", 18000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_A10", 22000, "PLANE", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
 
-    ["UK3CB_CW_US_B_LATE_UH1H_GUNSHIP", 13500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_UH1H_GUNSHIP", 16000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["UK3CB_CW_US_B_LATE_AH64_GS", 20000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;
 
