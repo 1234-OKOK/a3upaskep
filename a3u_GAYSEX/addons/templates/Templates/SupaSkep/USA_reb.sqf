@@ -13,7 +13,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 ["vehiclesBasic", ["UK3CB_B_M1030_HIDF", "UK3CB_B_YAVA_HIDF"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["UK3CB_CW_US_B_LATE_M151_Jeep_Open", "UK3CB_CW_US_B_LATE_M151_Jeep_Closed"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["UK3CB_CW_US_B_LATE_M1025_Unarmed", "UK3CB_CW_US_B_LATE_M998_4DR", "UK3CB_CW_US_B_LATE_M998_2DR", ]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_CW_US_B_LATE_M1025_Unarmed", "UK3CB_CW_US_B_LATE_M998_4DR", "UK3CB_CW_US_B_LATE_M998_2DR"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["UK3CB_CW_US_B_LATE_M939_Open", "UK3CB_CW_US_B_LATE_M939", "rhsgref_hidf_assault_boat"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["UK3CB_MDF_B_M1151_GPK_M240, UK3CB_CW_US_B_LATE_M151_Jeep_HMG"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["UK3CB_CW_US_B_LATE_M1025_M2", "UK3CB_CW_US_B_LATE_M1025_MK19"]] call _fnc_saveToTemplate;
