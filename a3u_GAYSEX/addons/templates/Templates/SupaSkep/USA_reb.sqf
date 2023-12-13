@@ -7,7 +7,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["name", "USA"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_US_F"] call _fnc_saveToTemplate;
-["flagTexture", "a3\data_f\flags\flag_fia_co.paa"] call _fnc_saveToTemplate;
+["flagTexture", "a3\data_f\flags\flag_us_co.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_USA"] call _fnc_saveToTemplate;
 
 
