@@ -18,13 +18,13 @@ class Templates {
         file = "ESP_occ";
         description = "Speerhead";
     };
-    class 3CBF_CUB : 3CBF_Base
+    class 3CBF_CUBA : 3CBF_Base
     {
         side = "Riv";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
         name = "CUBAN SABOTEURS"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
-        file = "CUB_Riv";
+        file = "CUBA_Riv";
         description = "Viva La Revolution";
     };
      class 3CBF_GRE : 3CBF_Base
@@ -35,4 +35,5 @@ class Templates {
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "GRE_occ";
         description = "Viva La Revolution";
+    };
 };
