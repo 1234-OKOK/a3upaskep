@@ -153,7 +153,7 @@ private _initialRebelEquipment = [
     "UK3CB_CW_US_B_LATE_B_MEDIC",
     "Binocular",
     "UK3CB_CW_US_B_LATE_V_PASGT_Rif_Vest","UK3CB_CW_US_B_LATE_V_PASGT_MG_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Medic_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Crew_Vest", "rhsgref_alice_webbing",
-    "UK3CB_CW_US_B_LATE_B_RIF_03", "UK3CB_CW_US_B_LATE_B_RIF_02", "UK3CB_CW_US_B_LATE_B_RIF_01", "UK3CB_CW_US_B_LATE_B_Radio", "UK3CB_CHC_C_B_HIKER", "rhsgref_hidf_alicepack", "B_Kitbag_rgr", "B_AssaultPack_rgr", "B_Carryall_green_F", "B_FieldPack_green_F"
+    "UK3CB_CW_US_B_LATE_B_RIF_03", "UK3CB_CW_US_B_LATE_B_RIF_02", "UK3CB_CW_US_B_LATE_B_RIF", "UK3CB_CW_US_B_LATE_B_Radio", "UK3CB_CHC_C_B_HIKER", "rhsgref_hidf_alicepack", "B_Kitbag_rgr", "B_AssaultPack_rgr", "B_Carryall_green_F", "B_FieldPack_green_F", "UK3CB_B_US_Backpack"
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};

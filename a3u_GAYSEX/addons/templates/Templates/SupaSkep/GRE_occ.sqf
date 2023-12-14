@@ -52,8 +52,8 @@
 ["UK3CB_ARD_O_BM21",["rhs_mag_m21of_1"]]
 ]] call _fnc_saveToTemplate;
 
-["uavsAttack", ["O_UAV_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["uavsPortable", ["O_UAV_01_F"]] call _fnc_saveToTemplate;
+["uavsAttack", [""]] call _fnc_saveToTemplate;
+["uavsPortable", [""]] call _fnc_saveToTemplate;
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
 ["vehiclesMilitiaLightArmed", ["UK3CB_ARD_O_UAZ_SPG9", "UK3CB_ARD_O_UAZ_MG"]] call _fnc_saveToTemplate;
@@ -107,14 +107,14 @@ _loadoutData set ["lightATLaunchers", ["rhs_weap_rpg26"]];
 _loadoutData set ["lightHELaunchers", ["rhs_weap_rshg2"]];
 _loadoutData set ["ATLaunchers", []];
 _loadoutData set ["AALaunchers", ["rhs_weap_igla"]];
-_loadoutData set ["sidearms", ["rhs_weap_makarov_pm", "rhs_weap_pya"]];
+_loadoutData set ["sidearms", ["rhs_weap_makarov_pm", "UK3CB_BHP", "UK3CB_CZ75"]];
 
 _loadoutData set ["ATMines", ["rhs_mag_mine_ptm1", "rhs_mine_tm62m_mag"]];
 _loadoutData set ["APMines", ["rhs_mine_ozm72_a_mag", "rhs_mine_ozm72_b_mag", "rhs_mine_ozm72_c_mag", "rhs_mag_mine_pfm1", "rhs_mine_pmn2_mag"]];
 _loadoutData set ["lightExplosives", ["rhsusf_m112_mag", "rhs_ec200_mag"]];
 _loadoutData set ["heavyExplosives", ["rhsusf_m112x4_mag", "rhs_ec400_mag"]];
 
-_loadoutData set ["antiInfantryGrenades", ["rhs_mag_rgd5", "rhs_mag_rgn", "rhs_mag_rgo", "rhs_mag_f1"]];
+_loadoutData set ["antiInfantryGrenades", ["rhs_mag_rgd5", "rhs_mag_f1"]];
 _loadoutData set ["smokeGrenades", ["rhs_mag_rdg2_white"]];
 _loadoutData set ["signalsmokeGrenades", ["rhs_mag_nspd"]];
 
@@ -125,17 +125,17 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["radios", ["ItemRadio"]];
 _loadoutData set ["gpses", ["ItemGPS"]];
-_loadoutData set ["NVGs", ["rhs_1PN138"]];
+_loadoutData set ["NVGs", ["UK3CB_Gloves_black_NVG"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["rhs_pdu4"]];
 
-_loadoutData set ["traitorUniforms", ["rhsgref_uniform_olive"]];
-_loadoutData set ["traitorVests", ["rhs_chicom_khk"]];
-_loadoutData set ["traitorHats", ["H_Cap_oli", "H_Cap_grn"]];
+_loadoutData set ["traitorUniforms", ["U_I_C_Soldier_Bandit_1_F"]];
+_loadoutData set ["traitorVests", ["rhsgref_chicom"]];
+_loadoutData set ["traitorHats", ["H_Cap_oli", "H_Booniehat_oli"]];
 
-_loadoutData set ["officerUniforms", ["UK3CB_ARD_B_H_Beret_OFF", "UK3CB_ARD_B_U_SF_Uniform_01"]];
+_loadoutData set ["officerUniforms", ["rhsgref_uniform_TLA_1"]];
 _loadoutData set ["officerVests", ["rhs_vest_pistol_holster", "rhs_gear_OFF", "rhs_vest_commander"]];
-_loadoutData set ["officerHats", ["UK3CB_ARD_B_H_Beret_OFF"]];
+_loadoutData set ["officerHats", ["H_Beret_blk"]];
 
 _loadoutData set ["uniforms", []];
 _loadoutData set ["ATvests", []];
@@ -146,12 +146,12 @@ _loadoutData set ["SNIvests", []];
 _loadoutData set ["GLvests", []];
 _loadoutData set ["vests", []];
 _loadoutData set ["backpacks", []];
-_loadoutData set ["medBackpacks", ["UK3CB_ARD_O_B_LargePack_MD_TAN"]];
+_loadoutData set ["medBackpacks", ["UK3CB_KDF_B_B_Sidor_MD_OLI"]];
 _loadoutData set ["atBackpacks", []];
 _loadoutData set ["longRangeRadios", ["rhs_r148"]];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["UK3CB_ARD_B_H_Beret", "UK3CB_ARD_O_H_Patrolcap"]];
-_loadoutData set ["sniHats", ["UK3CB_H_Woolhat_KHK"]];
+_loadoutData set ["slHat", ["H_Cap_oli  ", "UK3CB_TKA_I_H_Patrolcap_OLI"]];
+_loadoutData set ["sniHats", ["H_Booniehat_oli", "H_Hat_Safari_olive_F"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -205,14 +205,14 @@ _loadoutData set ["goggles", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["UK3CB_ARD_B_U_H_Pilot_Uniform_01", "UK3CB_ARD_O_U_Crew_Uniform_01"]];
-_sfLoadoutData set ["vests", ["UK3CB_TKA_O_V_6b23_ml_Oli_02", "UK3CB_TKA_O_V_6b23_ML_6sh92_radio_Oli"]];
-_sfLoadoutData set ["MEDvests", ["UK3CB_TKA_O_V_6b23_medic_Oli"]];
-_sfLoadoutData set ["GLvests", ["UK3CB_TKA_O_V_6b23_ml_6sh92_vog_Oli"]];
-_sfLoadoutData set ["backpacks", ["B_FieldPack_cbr", "rhs_tortila_grey"]];
-_sfLoadoutData set ["atBackpacks", ["rhs_rpg_empty"]];
-_sfLoadoutData set ["helmets", ["rhs_altyn_novisor", "rhs_altyn_novisor_ess", "UK3CB_H_Woolhat_KHK", "UK3CB_ARD_B_H_Beret"]];
-_sfLoadoutData set ["sniHats", ["UK3CB_LSM_B_H_BoonieHat_KHK"]];
+_sfLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhs_uniform_afghanka"]];
+_sfLoadoutData set ["vests", ["rhs_6b2_lifchik"]];
+_sfLoadoutData set ["MEDvests", ["rhs_6b2_lifchik"]];
+_sfLoadoutData set ["GLvests", ["rhs_6b2_lifchik"]];
+_sfLoadoutData set ["backpacks", ["rhs_rd54_vest", "rhs_rd54", "rhs_tortila_khaki"]];
+_sfLoadoutData set ["atBackpacks", ["rhs_rpg_2", "rhs_rpg_6b2", "rhs_rpg_6b3"]];
+_sfLoadoutData set ["helmets", ["UK3CB_H_Civ_Beret"]];
+_sfLoadoutData set ["sniHats", ["UK3CB_H_Civ_Beret"]];
 
 _sfLoadoutData set ["ATLaunchers", [
 ["rhs_weap_rpg7", "", "", "rhs_acc_pgo7v3", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_PG7VS_mag", "rhs_rpg7_PG7VR_mag"], [], ""],
@@ -292,14 +292,14 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_eliteLoadoutData set ["uniforms", ["UK3CB_ARD_B_U_H_Pilot_Uniform_01", "UK3CB_ARD_O_U_Crew_Uniform_01"]];
-_eliteLoadoutData set ["vests", ["UK3CB_TKA_O_V_6b23_ml_Oli_02", "UK3CB_TKA_O_V_6b23_ML_6sh92_radio_Oli"]];
-_eliteLoadoutData set ["MEDvests", ["UK3CB_TKA_O_V_6b23_medic_Oli"]];
-_eliteLoadoutData set ["GLvests", ["UK3CB_TKA_O_V_6b23_ml_6sh92_vog_Oli"]];
-_eliteLoadoutData set ["backpacks", ["B_FieldPack_cbr", "rhs_tortila_grey"]];
-_eliteLoadoutData set ["atBackpacks", ["rhs_rpg_empty"]];
-_eliteLoadoutData set ["helmets", ["rhs_altyn_novisor", "rhs_altyn_novisor_ess", "UK3CB_H_Woolhat_KHK", "UK3CB_ARD_B_H_Beret"]];
-_eliteLoadoutData set ["sniHats", ["UK3CB_LSM_B_H_BoonieHat_KHK"]];
+_eliteLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
+_eliteLoadoutData set ["vests", ["rhs_6b5", "rhs_6b5_rifleman", "rhs_6b5_sniper"]];
+_eliteLoadoutData set ["MEDvests", ["rhs_6b5_medic"]];
+_eliteLoadoutData set ["GLvests", ["rhs_6b5_officer"]];
+_eliteLoadoutData set ["backpacks", ["rhs_tortila_olive", "rhs_rk_sht_30_olive", "rhs_rk_sht_30_olive_engineer_empty"]];
+_eliteLoadoutData set ["atBackpacks", ["rhs_rpg_2"]];
+_eliteLoadoutData set ["helmets", ["UK3CB_ADA_B_H_6b27m_OLI", "UK3CB_ADA_B_H_6b27m_ESS_OLI"]];
+_eliteLoadoutData set ["sniHats", ["UK3CB_ADA_B_H_6b27m_OLI", "UK3CB_ADA_B_H_6b27m_ESS_OLI"]];
 
 _eliteLoadoutData set ["ATLaunchers", [
 ["rhs_weap_rpg7", "", "", "rhs_acc_pgo7v3", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_PG7VS_mag", "rhs_rpg7_PG7VR_mag"], [], ""],
@@ -376,14 +376,14 @@ _eliteLoadoutData set ["sniperRifles", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["UK3CB_ARD_B_U_H_Pilot_Uniform_01", "UK3CB_ARD_B_U_SF_Uniform_01", "UK3CB_ARD_O_U_CombatUniform_01", "UK3CB_TKP_I_U_QRF_CombatUniform_BLK", "UK3CB_TKA_I_U_CombatUniform_01_OLI", "UK3CB_TKA_I_U_CombatUniform_02_OLI", "UK3CB_TKA_I_U_CombatUniform_03_OLI"]];
-_militaryLoadoutData set ["vests", ["UK3CB_ARD_B_V_6b5_Desert", "UK3CB_ARD_B_V_6b5_Rifleman_Desert"]];
-_militaryLoadoutData set ["MEDvests", ["UK3CB_ARD_B_V_6b5_Medic_Desert"]];
-_militaryLoadoutData set ["SLvests", ["UK3CB_ARD_B_V_6b5_Officer_Desert"]];
-_militaryLoadoutData set ["SNIvests", ["UK3CB_ARD_B_V_6b5_Sniper_Desert"]];
-_militaryLoadoutData set ["backpacks", ["rhs_rd54_vest", "UK3CB_ARD_O_B_LargePack_RIF_TAN"]];
+_militaryLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
+_militaryLoadoutData set ["vests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
+_militaryLoadoutData set ["MEDvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
+_militaryLoadoutData set ["SLvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
+_militaryLoadoutData set ["SNIvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
+_militaryLoadoutData set ["backpacks", ["B_FieldPack_oli", "rhs_rk_sht_30_olive", "rhs_rk_sht_30_olive_engineer_empty"]];
 _militaryLoadoutData set ["atBackpacks", ["rhs_rpg_2"]];
-_militaryLoadoutData set ["helmets", ["UK3CB_ABP_B_H_6b27m_DES", "UK3CB_ABP_B_H_6b27m_ess_DES", "UK3CB_ADA_B_H_6b27m_ml_OLI", "UK3CB_ADA_B_H_6b27m_ml_ESS_OLI"]];
+_militaryLoadoutData set ["helmets", ["rhs_ssh60", "UK3CB_TKA_I_H_SSh68_Oli"]];
 
 _militaryLoadoutData set ["ATLaunchers", [
 ["rhs_weap_rpg7", "", "", "rhs_acc_pgo7v2", ["rhs_rpg7_PG7VL_mag", "rhs_rpg7_PG7VL_mag", "rhs_rpg7_OG7V_mag"], [], ""],
@@ -459,9 +459,9 @@ _militaryLoadoutData set ["sniperRifles", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_policeLoadoutData set ["uniforms", ["UK3CB_TKP_I_U_CombatUniform_BLK", "UK3CB_TKP_I_U_QRF_CombatUniform_BLK"]];
-_policeLoadoutData set ["vests", ["UK3CB_TKP_O_V_6b23_ml_BLK", "UK3CB_TKP_O_V_6b23_ML_6sh92_radio_BLK"]];
-_policeLoadoutData set ["helmets", ["UK3CB_ANP_B_H_6b27m_BLK", "H_Bandanna_gry", "H_Beret_blk", "H_Cap_blk"]];
+_policeLoadoutData set ["uniforms", ["U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Para_4_F", "U_I_C_Soldier_Para_3_F", "U_I_C_Soldier_Para_2_F", "U_I_C_Soldier_Para_1_F"]];
+_policeLoadoutData set ["vests", ["V_TacVest_brn", "V_TacVest_khk", "V_TacVest_oli"]];
+_policeLoadoutData set ["helmets", ["UK3CB_LSM_B_H_Field_Cap_OLI", "UK3CB_LSM_B_H_M88_Field_Cap_OLI", "UK3CB_LSM_B_H_BoonieHat_OLI", "H_Cap_oli", "H_Booniehat_oli"]];
 _policeLoadoutData set ["carbines", [
 ["rhs_weap_aks74", "rhs_acc_dtk1983", "", "", ["rhs_30Rnd_545x39_7N6M_AK", "rhs_30Rnd_545x39_7N6M_AK", "rhs_30Rnd_545x39_AK_green"], [], ""],
 ["rhs_weap_ak74", "rhs_acc_dtk1983", "", "", ["rhs_30Rnd_545x39_7N6M_AK", "rhs_30Rnd_545x39_7N6M_AK", "rhs_30Rnd_545x39_AK_green"], [], ""],
@@ -475,11 +475,11 @@ _policeLoadoutData set ["sidearms", ["rhs_weap_makarov_pm", "rhs_weap_pya"]];
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_militiaLoadoutData set ["uniforms", ["UK3CB_ARD_B_U_H_Pilot_Uniform_01", "UK3CB_ARD_B_U_SF_Uniform_01", "UK3CB_ARD_O_U_CombatUniform_01", "UK3CB_TKP_I_U_QRF_CombatUniform_BLK", "UK3CB_TKA_I_U_CombatUniform_01_OLI", "UK3CB_TKA_I_U_CombatUniform_02_OLI", "UK3CB_TKA_I_U_CombatUniform_03_OLI"]];
-_militiaLoadoutData set ["vests", ["UK3CB_ARD_B_V_6b23_vydra_3m_TAN", "UK3CB_TKA_O_V_6b23_vydra_3m_TAN"]];
-_militiaLoadoutData set ["backpacks", ["UK3CB_CW_SOV_O_EARLY_B_Sidor_RIF", "UK3CB_ARD_O_B_LargePack_RIF_TAN"]];
+_militiaLoadoutData set ["uniforms", ["U_I_C_Soldier_Bandit_5_F", "U_I_C_Soldier_Bandit_4_F", "U_I_C_Soldier_Bandit_3_F", "U_I_C_Soldier_Bandit_2_F", "U_I_C_Soldier_Bandit_1_F"]];
+_militiaLoadoutData set ["vests", ["UK3CB_TKA_I_V_6Sh92_vog_Khk", "UK3CB_TKA_I_V_6Sh92_vog_Grey", "UK3CB_TKA_I_V_6Sh92_vog_Oli", "UK3CB_TKA_I_V_6Sh92_vog_Des"]];
+_militiaLoadoutData set ["backpacks", ["B_FieldPack_khk", "UK3CB_TKA_O_B_RIF_Khk", "UK3CB_TKA_O_B_ENG_Khk", "UK3CB_B_Alice_Bedroll_K"]];
 _militiaLoadoutData set ["atBackpacks", ["rhs_rpg_empty"]];
-_militiaLoadoutData set ["helmets", ["UK3CB_ARD_B_H_SSh68_Des", "UK3CB_ARD_B_H_SSh68", "rhssaf_bandana_smb", "UK3CB_ARD_O_H_Patrolcap"]];
+_militiaLoadoutData set ["helmets", ["H_Bandanna_khk", "UK3CB_LSM_B_H_BoonieHat_KHK", "H_Booniehat_khk"]];
 
 _militiaLoadoutData set ["lightATLaunchers", ["rhs_weap_rpg18"]];
 _militiaLoadoutData set ["ATLaunchers", [
