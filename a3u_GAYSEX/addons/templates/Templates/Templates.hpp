@@ -4,7 +4,7 @@ class Templates {
     {
         side = "Reb";
         flagTexture = "a3\data_f\flags\flag_us_co.paa";
-        name = "THE UNITED STATES ARMY"; 
+        name = "The United States Army"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "USA_reb";
         description = "One of the militaries of all time";
@@ -13,7 +13,7 @@ class Templates {
     {
         side = "Occ";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
-        name = "THE EINSHEITPAKT"; 
+        name = "The Einsheitpakt"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "ESP_occ";
         description = "Speerhead";
@@ -22,7 +22,7 @@ class Templates {
     {
         side = "Riv";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
-        name = "CUBAN SABOTEURS"; 
+        name = "Cuban Saboteurs"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "CUBA_Riv";
         description = "Viva La Revolution";
@@ -31,9 +31,9 @@ class Templates {
     {
         side = "Occ";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
-        name = "GRENADIAN ARMED FORCES"; 
+        name = "The Grenadian People's Revolutionary Army"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "GRE_occ";
-        description = "Viva La Revolution";
+        description = "The 12 Apostles";
     };
 };
