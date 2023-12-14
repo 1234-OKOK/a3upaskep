@@ -29,7 +29,7 @@ class Templates {
     };
      class 3CBF_GRE : 3CBF_Base
     {
-        side = "occ";
+        side = "Occ";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
         name = "GRENADIAN ARMED FORCES"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
