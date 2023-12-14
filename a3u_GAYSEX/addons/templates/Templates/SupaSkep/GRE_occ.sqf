@@ -17,37 +17,37 @@
 ["surrenderCrate", "Box_East_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_CSAT_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["UK3CB_ARD_O_YAVA"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["UK3CB_ARD_O_BRDM2_UM", "UK3CB_ARD_O_GAZ_Vodnik"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["UK3CB_ARD_O_BRDM2", "UK3CB_ARD_O_BRDM2_ATGM", "UK3CB_ARD_O_GAZ_Vodnik_Cannon", "UK3CB_ARD_O_GAZ_Vodnik_KVPT", "UK3CB_ARD_O_Ural_Zu23"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["UK3CB_ARD_O_Ural", "UK3CB_ARD_O_Ural_Open"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["UK3CB_ARD_O_Ural_Recovery"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["UK3CB_ARD_O_Ural_Ammo"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["UK3CB_ARD_O_Ural_Repair"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["UK3CB_ARD_O_Ural_Fuel"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["UK3CB_ARD_O_GAZ_Vodnik_MedEvac"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["UK3CB_ARD_O_BTR70", "UK3CB_ARD_O_MTLB_ZU23"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["UK3CB_ARD_I_YAVA", "UK3CB_ARD_I_Hilux_Open", "UK3CB_ARD_I_Hilux_Closed", "UK3CB_ARD_I_Hilux_Ambulance"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["UK3CB_ARD_I_Hilux_Pkm", "UK3CB_ARD_I_Hilux_Dshkm", "UK3CB_ARD_I_Hilux_M2", "UK3CB_ARD_I_BTR40", "UK3CB_ARD_I_BTR40_MG", "UK3CB_KDF_I_MTLB_AMB", "UK3CB_ARD_I_MTLB_PKT", "UK3CB_ARD_I_MTLB_KPVT", "UK3CB_ARD_I_BRDM2_HQ", "UK3CB_ARD_I_BRDM2"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["UK3CB_ARD_I_Hilux_Zu23", "UK3CB_ARD_I_Hilux_Zu23_Front", "UK3CB_ARD_I_Hilux_Zu23", "UK3CB_ARD_I_Hilux_Rocket", "UK3CB_ARD_I_Hilux_Spg9", "UK3CB_ARD_I_Hilux_Metis", "UK3CB_ARD_I_BRDM2_ATGM", "UK3CB_ARD_I_MTLB_BMP", "UK3CB_ARD_I_MTLB_Cannon"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["UK3CB_ARD_I_Zil131_Open", "UK3CB_ARD_I_Zil131_Covered"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["UK3CB_ARD_B_Ural_Recovery"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["UK3CB_ARD_B_Ural_Ammo"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["UK3CB_ARD_B_Ural_Repair"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["UK3CB_ARD_B_Ural_Fuel"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["UK3CB_ARD_I_Hilux_Ambulance", "UK3CB_KDF_I_MTLB_AMB"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["UK3CB_ARD_I_BMP1", "UK3CB_ARD_I_BRM1K", "UK3CB_KDF_I_BTR60", "UK3CB_ARD_I_BTR70"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", ["UK3CB_ARD_O_BTR70"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["UK3CB_ARD_O_BMP1", "UK3CB_ARD_O_BMP2", "UK3CB_ARD_O_BTR80", "UK3CB_ARD_O_BTR80a"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["UK3CB_ARD_I_BMP2", "UK3CB_ARD_I_BMP2K", "UK3CB_ARD_I_BTR80", "UK3CB_CW_SOV_O_LATE_BTR80a"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
-["vehiclesLightTanks",  ["UK3CB_ARD_O_T34", "UK3CB_ARD_O_T55"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["UK3CB_ARD_O_T55", "UK3CB_TKA_B_T72A", "UK3CB_TKA_B_T72B", "UK3CB_TKA_B_T72BM"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["UK3CB_ARD_O_ZsuTank", "UK3CB_ARD_O_2S6M_Tunguska"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["UK3CB_ARD_I_T34", "UK3CB_ARD_I_T55"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["UK3CB_ARD_I_T72A", "UK3CB_ARD_I_T72B", "UK3CB_ARD_I_T72BM", "UK3CB_ARD_I_T72BA", "UK3CB_ARD_I_T72BB"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["UK3CB_ARD_I_Ural_Zu23", "UK3CB_ARD_I_MTLB_ZU23", "UK3CB_ARD_I_ZsuTank"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["rhsgref_hidf_assault_boat", "rhsgref_hidf_rhib"]] call _fnc_saveToTemplate;
-["vehiclesGunBoats", ["UK3CB_MDF_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["UK3CB_CHD_B_Small_Boat_Wood", "UK3CB_CHD_B_Small_Boat_Closed", "UK3CB_CHD_B_Small_Boat_Open"]] call _fnc_saveToTemplate;
+["vehiclesGunBoats", ["UK3CB_CHD_B_Fishing_Boat_DSHKM", "UK3CB_CHD_B_Fishing_Boat_SPG9", "UK3CB_CHD_W_B_Fishing_Boat_Zu23_front", "UK3CB_CHD_W_B_Fishing_Boat_Zu23"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["UK3CB_TKA_B_Su25SM_CAS"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["UK3CB_ARD_O_MIG29SM", "UK3CB_ARD_O_MIG29S"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["UK3CB_CHD_O_Su25SM_CAS", "UK3CB_CHD_O_Su25SM_KH29", "UK3CB_CHD_O_Antonov_AN2_Armed_Rockets", "UK3CB_CHD_O_Antonov_AN2_Armed", "UK3CB_KDF_I_MIG21_CAS", "UK3CB_KDF_I_MIG21_AT"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["UK3CB_KDF_O_MIG29S", "UK3CB_KDF_O_MIG29SM", "UK3CB_KDF_I_MIG21_AA"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
-["vehiclesHelisTransport", ["UK3CB_ARD_O_Mi8", "UK3CB_ARD_O_Mi8", "UK3CB_ARD_O_Mi8", "UK3CB_ARD_O_Mi_24V"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["UK3CB_KDF_O_Mi8", "UK3CB_ARD_O_Mi8AMT", "UK3CB_KDF_O_Mi_24P", "UK3CB_ARD_O_Mi_24V"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", ["UK3CB_ARD_O_Mi8AMT"]] call _fnc_saveToTemplate;
-["vehiclesHelisLightAttack", ["UK3CB_ARD_O_Mi8AMTSh"]] call _fnc_saveToTemplate;
-["vehiclesHelisAttack", ["UK3CB_ARD_O_Mi_24P", "UK3CB_ARD_O_Mi_24V"]] call _fnc_saveToTemplate;
+["vehiclesHelisLightAttack", ["UK3CB_CHD_O_Mi8AMTSh"]] call _fnc_saveToTemplate;
+["vehiclesHelisAttack", ["UK3CB_KDF_O_Mi_24P", "UK3CB_KDF_O_Mi_24V"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["UK3CB_ARD_O_BM21"]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["UK3CB_ARD_O_BM21", "UK3CB_ARD_I_MAZ_543_SCUD", "UK3CB_ARD_I_Hilux_Mortar", "UK3CB_ARD_I_Hilux_Rocket_Arty"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
 ["UK3CB_ARD_O_BM21",["rhs_mag_m21of_1"]]
 ]] call _fnc_saveToTemplate;
@@ -56,10 +56,10 @@
 ["uavsPortable", [""]] call _fnc_saveToTemplate;
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["UK3CB_ARD_O_UAZ_SPG9", "UK3CB_ARD_O_UAZ_MG"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["UK3CB_ARD_O_Zil131_Covered", "UK3CB_ARD_O_Zil131_Open"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["UK3CB_ARD_O_UAZ_Closed", "UK3CB_ARD_O_UAZ_Open", "UK3CB_ARD_O_BTR40"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["UK3CB_ARD_O_BTR60", "UK3CB_ARD_O_BTR40_MG", "UK3CB_ARD_O_MTLB_PKT"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["UK3CB_ARD_I_Hilux_Pkm", "UK3CB_ARD_I_Hilux_Dshkm", "UK3CB_ARD_I_Hilux_M2", "UK3CB_ARD_I_BTR40", "UK3CB_ARD_I_BTR40_MG", "UK3CB_KDF_I_MTLB_AMB", "UK3CB_ARD_I_MTLB_PKT", "UK3CB_ARD_I_MTLB_KPVT", "UK3CB_ARD_I_BRDM2_HQ", "UK3CB_ARD_I_BRDM2"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["UK3CB_ARD_I_Zil131_Open", "UK3CB_ARD_I_Zil131_Covered"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["UK3CB_ARD_I_YAVA", "UK3CB_ARD_I_Hilux_Open", "UK3CB_ARD_I_Hilux_Closed", "UK3CB_ARD_I_Hilux_Ambulance"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["UK3CB_ARD_I_Hilux_Zu23", "UK3CB_ARD_I_Hilux_Zu23_Front", "UK3CB_ARD_I_Hilux_Zu23", "UK3CB_ARD_I_Hilux_Rocket", "UK3CB_ARD_I_Hilux_Spg9", "UK3CB_ARD_I_Hilux_Metis", "UK3CB_ARD_I_BRDM2_ATGM", "UK3CB_ARD_I_MTLB_BMP", "UK3CB_ARD_I_MTLB_Cannon"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["UK3CB_TKP_B_Hilux_Pkm", "UK3CB_TKP_B_Hilux_Open", "UK3CB_TKP_B_Lada_Police", "UK3CB_TKP_B_Datsun_Pickup", "UK3CB_TKP_B_Hilux_Closed"]] call _fnc_saveToTemplate;
 

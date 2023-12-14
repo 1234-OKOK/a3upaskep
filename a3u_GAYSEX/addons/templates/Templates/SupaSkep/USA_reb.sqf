@@ -169,7 +169,9 @@ private _rebUniforms = [
     "UK3CB_CW_US_B_LATE_U_CombatUniform_03_WDL",
     "UK3CB_CW_US_B_LATE_U_CombatUniform_04_WDL",
     "UK3CB_CW_US_B_LATE_U_JNR_OFFICER_Uniform_01_WDL",
-    "UK3CB_CW_US_B_LATE_U_OFFICER_Uniform_01_WDL"
+    "UK3CB_CW_US_B_LATE_U_OFFICER_Uniform_01_WDL",
+    "rhs_uniform_bdu_erdl",
+    "rhsgref_uniform_ERDL"
 ];
 
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;
@@ -187,7 +189,11 @@ private _rebUniforms = [
     "UK3CB_CW_US_B_LATE_H_JNR_OFF_Patrol_Cap_WDL_01",
     "UK3CB_CW_US_B_LATE_H_OFF_Patrol_Cap_WDL_01",
     "UK3CB_CW_US_B_LATE_H_PASGT_01_WDL",
-    "UK3CB_CW_US_B_LATE_H_PASGT_02_WDL"
+    "UK3CB_CW_US_B_LATE_H_PASGT_02_WDL",
+    "UK3CB_CW_US_B_EARLY_H_BoonieHat_ERDL_01",
+    "UK3CB_CW_US_B_EARLY_H_BoonieHat_ERDL_02",
+    "rhsgref_helmet_M1_erdl",
+    "rhsgref_helmet_pasgt_erdl"
 
 ]] call _fnc_saveToTemplate;
 
