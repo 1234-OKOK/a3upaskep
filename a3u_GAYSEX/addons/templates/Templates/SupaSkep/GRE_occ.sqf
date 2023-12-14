@@ -82,7 +82,7 @@
 ["minefieldAT", ["rhs_mine_tm62m"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["rhs_mine_pmn2"]] call _fnc_saveToTemplate;
 
-#include "3CBF_Vehicle_Attributes.sqf"
+
 
 /////////////////////
 ///  Identities   ///
