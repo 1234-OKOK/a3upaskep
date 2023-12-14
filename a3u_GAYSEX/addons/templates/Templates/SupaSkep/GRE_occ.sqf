@@ -3,7 +3,7 @@
 //////////////////////////
 
 ["name", "GRE"] call _fnc_saveToTemplate;
-["spawnMarkerName", format [localize "STR_supportcorridor", "ARD"]] call _fnc_saveToTemplate;
+["spawnMarkerName", format [localize "STR_supportcorridor", "GRE"]] call _fnc_saveToTemplate;
 
 ["flag", "Flag_Altis_F"] call _fnc_saveToTemplate;
 ["flagTexture", "a3\data_f\flags\flag_aaf_co.paa"] call _fnc_saveToTemplate;
@@ -89,7 +89,7 @@
 /////////////////////
 
 ["voices", ["Male02ENGFRE", "Male01ENGFRE"]] call _fnc_saveToTemplate;
-["faces", ["TanoanHead_A3_09","TanoanHead_A3_08","TanoanHead_A3_07","TanoanHead_A3_06","TanoanHead_A3_05","TanoanHead_A3_04","TanoanHead_A3_03","TanoanHead_A3_02","TanoanHead_A3_01"]] call _fnc_saveToTemplate;
+["faces", ["TanoanHead_A3_09", "TanoanHead_A3_08", "TanoanHead_A3_07", "TanoanHead_A3_06", "TanoanHead_A3_05", "TanoanHead_A3_04", "TanoanHead_A3_03", "TanoanHead_A3_02", "TanoanHead_A3_01"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
