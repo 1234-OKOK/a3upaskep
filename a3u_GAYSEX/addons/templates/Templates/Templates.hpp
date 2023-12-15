@@ -7,7 +7,7 @@ class Templates {
         name = "The United States Army"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "USA_reb";
-        description = "One of the militaries of all time";
+        description = "one of the largest military organisations in the world, responsible for the US Military's land based efforts. The US Army has gained much experience as a result of their extensive participation in warfare";
     };
     class 3CBF_ESP : 3CBF_Base
     {
@@ -25,7 +25,7 @@ class Templates {
         name = "Cuban Saboteurs"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "CUBA_Riv";
-        description = "Viva La Revolution";
+        description = "Mason killed a double...";
     };
      class 3CBF_GRE : 3CBF_Base
     {
