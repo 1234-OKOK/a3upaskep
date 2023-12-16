@@ -475,8 +475,6 @@ _policeLoadoutData set ["carbines", [
 ["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_RT"], [], ""],
 ["UK3CB_Bren", "", "", "", ["UK3CB_Bren_30Rnd_762x51_Magazine_RT"], [], ""],
 ["rhs_weap_akm", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
-["rhs_weap_akms", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
-["rhs_weap_akm", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
 ["rhs_weap_akms", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""]
 ]];
 _policeLoadoutData set ["sidearms", ["rhs_weap_makarov_pm", "rhs_weap_pya"]];
@@ -502,12 +500,18 @@ _militiaLoadoutData set ["slRifles", [
 ["uk3cb_ppsh41", "", "", "", ["uk3cb_PPSH_71rnd_magazine_RT"], [], ""],
 ["uk3cb_sks_01", "", "", "", ["uk3cb_10rnd_magazine_sks_RT"], [], ""],
 ["rhs_weap_m38", "", "", "", ["rhsgref_5Rnd_762x54_m38"], [], ""],
+["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_RT"], [], ""],
+["uk3cb_enfield_no4", "", "", "", ["uk3cb_no4_enfield_303_10Rnd_magazine_RT"], [], ""],
+["uk3cb_ppsh41", "", "", "", ["uk3cb_PPSH_71rnd_magazine_RT"], [], ""],
+["uk3cb_sks_01", "", "", "", ["uk3cb_10rnd_magazine_sks_RT"], [], ""],
+["rhs_weap_m38", "", "", "", ["rhsgref_5Rnd_762x54_m38"], [], ""],
+["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_RT"], [], ""],
 ["rhs_weap_akm", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
-["rhs_weap_akms", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
-["UK3CB_Sten", "", "", "", ["UK3CB_Sten_34Rnd_Magazine_RT"], [], ""]
+["rhs_weap_akms", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""]
 ]];
 
 _militiaLoadoutData set ["rifles", [
+["uk3cb_enfield_no4", "", "", "", ["uk3cb_no4_enfield_303_10Rnd_magazine_RT"], [], ""],
 ["uk3cb_enfield_no4", "", "", "", ["uk3cb_no4_enfield_303_10Rnd_magazine_RT"], [], ""],
 ["uk3cb_sks_01", "", "", "", ["uk3cb_10rnd_magazine_sks_RT"], [], ""],
 ["rhs_weap_m38", "", "", "", ["rhsgref_5Rnd_762x54_m38"], [], ""]

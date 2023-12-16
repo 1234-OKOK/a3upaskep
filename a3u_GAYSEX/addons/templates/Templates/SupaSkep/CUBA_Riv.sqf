@@ -77,6 +77,7 @@ _loadoutData set ["fullmask", [
 
 _loadoutData set ["headgear", [
     "rhsgref_hat_M1951",
+	"rhsgref_hat_M1951",
 	"rhsgref_helmet_M1_bare",
 	"rhsgref_helmet_M1_bare_alt01"
 ]];
@@ -100,7 +101,7 @@ _loadoutData set ["vests", ["rhs_chicom"]];
 _loadoutData set ["heavyVests", ["rhs_6b3_AK", "rhs_6b3_AK_2", "rhs_6b3_AK_3"]];
 _loadoutData set ["atBackpacks", ["rhs_rpg_2", "rhs_rpg_6b2", "rhs_rpg_6b3"]];
 _loadoutData set ["backpacks", ["UK3CB_B_Alice_K", "UK3CB_CHC_C_B_HIKER"]];
-_loadoutData set ["helmets", ["rhsgref_hat_M1951", "rhsgref_helmet_M1_bare", "rhsgref_helmet_M1_bare_alt01"]];
+_loadoutData set ["helmets", ["rhsgref_hat_M1951", "rhsgref_hat_M1951", "rhsgref_helmet_M1_bare", "rhsgref_helmet_M1_bare_alt01"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -136,20 +137,24 @@ _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["rifles", [
 	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
+	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
 	["rhs_weap_m1garand_sa43", "", "", "", ["rhsgref_8Rnd_762x63_Tracer_M1T_M1rifle"], [], ""],
 	["rhs_weap_ak74", "rhs_acc_dtk1983", "", "", ["rhs_30Rnd_545x39_AK_plum_green"], [], ""]
 ]];
 _loadoutData set ["tunedRifles", [
+	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
 	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
 	["uk3cb_sks_02", "", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
 	["rhs_weap_aks74", "rhs_acc_dtk1983", "", "", ["rhs_30Rnd_545x39_AK_plum_green"], [], ""]
 ]];
 _loadoutData set ["enforcerRifles", [
 	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
+	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
 	["rhs_weap_akm", "rhs_acc_dtkakm", "", "", ["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
 	["rhs_weap_savz58p", "", "", "", ["rhs_30Rnd_762x39mm_Savz58_tracer"], [], ""]
 ]];
 _loadoutData set ["carbines", [
+	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
 	["rhs_weap_l1a1_wood", "rhsgref_acc_falMuzzle_l1a1", "", "",  ["UK3CB_FNFAL_20rnd_762x51_RT"], [], ""],
 	["uk3cb_ppsh41", "", "", "", ["uk3cb_PPSH_71rnd_magazine_RT"], [], ""],
 	["rhs_weap_aks74u", "rhs_acc_dtk1983", "", "", ["rhs_30Rnd_545x39_AK_plum_green"], [], ""]
