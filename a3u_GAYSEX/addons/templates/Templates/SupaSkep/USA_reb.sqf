@@ -20,7 +20,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 ["vehiclesBoat", ["UK3CB_MDF_B_RHIB_Gunboat"]] call _fnc_saveToTemplate;
 
-["vehiclesPlane", ["UK3CB_CW_US_B_LATE_UH1H", "UK3CB_CW_US_B_LATE_UH1H_MED", "UK3CB_B_C47_HIDF"]] call _fnc_saveToTemplate;
+["vehiclesPlane", ["UK3CB_B_C47_HIDF","UK3CB_CW_US_B_LATE_UH1H", "UK3CB_CW_US_B_LATE_UH1H_MED"]] call _fnc_saveToTemplate;
 
 ["vehiclesCivCar", []] call _fnc_saveToTemplate;
 ["vehiclesCivTruck", []] call _fnc_saveToTemplate;
@@ -157,7 +157,7 @@ private _initialRebelEquipment = [
     ["rhsusf_m112_mag", 10], ["DemoCharge_Remote_Mag", 10], ["rhsusf_m112x4_mag", 3], ["SatchelCharge_Remote_Mag", 3],
     "UK3CB_CW_US_B_LATE_B_MEDIC",
     "Binocular",
-    "UK3CB_CW_US_B_LATE_V_PASGT_Rif_Vest","UK3CB_CW_US_B_LATE_V_PASGT_MG_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Medic_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Crew_Vest", "rhsgref_alice_webbing",
+    "UK3CB_CW_US_B_LATE_V_PASGT_Rif_Vest","UK3CB_CW_US_B_LATE_V_PASGT_MG_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Medic_Vest", "UK3CB_CW_US_B_LATE_V_PASGT_Crew_Vest", "rhsgref_alice_webbing", "rhsgref_TacVest_ERDL",
     "UK3CB_CW_US_B_LATE_B_RIF_03", "UK3CB_CW_US_B_LATE_B_RIF_02", "UK3CB_CW_US_B_LATE_B_RIF", "UK3CB_CW_US_B_LATE_B_Radio", "UK3CB_CHC_C_B_HIKER", "rhsgref_hidf_alicepack", "B_Kitbag_rgr", "B_AssaultPack_rgr", "B_Carryall_green_F", "B_FieldPack_green_F", "UK3CB_B_US_Backpack"
 ];
 

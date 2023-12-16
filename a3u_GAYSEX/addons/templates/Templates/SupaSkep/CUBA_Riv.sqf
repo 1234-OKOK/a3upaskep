@@ -170,7 +170,8 @@ _loadoutData set ["marksmanRifles", [
 	["rhs_weap_m76", "", "", "rhs_acc_pso1m2",["rhssaf_10Rnd_792x57_m76_tracer"], [], ""],
 	["rhs_weap_m76", "", "", "rhs_acc_pso1m21",["rhssaf_10Rnd_792x57_m76_tracer"], [], ""],
 	["rhs_weap_akmn", "rhs_acc_dtkakm", "", "rhs_acc_pso1m21",["UK3CB_AK47_30Rnd_Magazine_RT"], [], ""],
-	["UK3CB_CZ550", "", "", "uk3cb_optic_sro",["UK3CB_CZ550_5rnd_Mag_RT"], [], ""]
+	["UK3CB_CZ550", "", "", "uk3cb_optic_sro",["UK3CB_CZ550_5rnd_Mag_RT"], [], ""],
+	["rhs_weap_l1a1_wood", "", "", "rhsgref_acc_l1a1_l2a2",["rhs_mag_20Rnd_762x51_m62_fnfal"], [], ""]
 ]];
 _loadoutData set ["lightATLaunchers", ["rhs_weap_rpg75", "rhs_weap_rpg26", "rhs_weap_rpg18", "rhs_weap_m80"]];
 _loadoutData set ["ATLaunchers", [
