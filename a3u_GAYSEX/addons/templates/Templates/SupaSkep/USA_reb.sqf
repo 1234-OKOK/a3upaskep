@@ -107,12 +107,12 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["UK3CB_CW_US_B_LATE_M113_M2", 2500, "APC", {true}],
     ["UK3CB_CW_US_B_LATE_M113_MK19", 2500, "CAR", {true}],
 
-    ["UK3CB_CW_US_B_LATE_AAV", 4000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["UK3CB_CW_US_B_LATE_AAV", 6000, "APC", {tierWar > 3 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
     ["UK3CB_CW_US_B_LATE_M2A2", 10000, "APC", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
-    ["UK3CB_CW_US_B_LATE_LAV25", 8000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["UK3CB_CW_US_B_EARLY_M60a1", 12500, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["UK3CB_CW_US_B_LATE_M60a3", 14000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["UK3CB_CW_US_B_LATE_LAV25", 7500, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+    ["UK3CB_CW_US_B_EARLY_M60a1", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["UK3CB_CW_US_B_LATE_M60a3", 12000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["UK3CB_CW_US_B_LATE_M1A1", 16000, "TANK", {tierWar > 7 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
     ["UK3CB_KRG_B_M270_Avenger", 5000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],

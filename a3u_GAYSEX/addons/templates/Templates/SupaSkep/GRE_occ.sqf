@@ -63,8 +63,8 @@
 
 ["vehiclesPolice", ["UK3CB_ADP_B_YAVA", "UK3CB_ADP_B_Datsun_Pickup", "UK3CB_ADP_B_Datsun_Pickup_PKM", "UK3CB_ADP_B_LandRover_Closed", "UK3CB_ADP_B_LandRover_Open", "UK3CB_ADP_B_LandRover_M2", "UK3CB_ADP_B_Offroad", "UK3CB_ADP_B_Offroad_M2", "UK3CB_ADP_B_Van_Transport", "UK3CB_ADP_B_BTR40", "UK3CB_ADP_B_BTR40_MG"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["UK3CB_ARD_O_PKM_High", "UK3CB_ARD_O_DSHKM", "UK3CB_ADP_B_KORD_high"]] call _fnc_saveToTemplate;
-["staticAT", ["UK3CB_CW_SOV_O_Late_Metis", "UK3CB_GAF_O_Kornet", "rhsgref_ins_d30_at"]] call _fnc_saveToTemplate;
+["staticMGs", ["UK3CB_GAF_O_Kornet", "UK3CB_GAF_O_Kornet", "UK3CB_GAF_O_Kornet"]] call _fnc_saveToTemplate;
+["staticAT", ["UK3CB_GAF_O_Kornet", "UK3CB_GAF_O_Kornet", "rhsgref_ins_d30_at"]] call _fnc_saveToTemplate;
 ["staticAA", ["UK3CB_ARD_O_ZU23", "UK3CB_ARD_O_Igla_AA_pod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["UK3CB_ARD_O_2b14_82mm"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["UK3CB_KDF_O_D30"]] call _fnc_saveToTemplate;
@@ -80,7 +80,7 @@
 
 
 ["minefieldAT", ["rhs_mine_tm62m"]] call _fnc_saveToTemplate;
-["minefieldAPERS", ["rhs_mine_pmn2"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["rhs_mine_tm62m"]] call _fnc_saveToTemplate;
 
 
 
