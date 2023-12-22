@@ -36,4 +36,13 @@ class Templates {
         file = "GRE_occ";
         description = "The 12 Apostles";
     };
+    class 3CBF_USSR : 3CBF_Base
+    {
+        side = "Inv";
+        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_CW_SOV\Flag\cw_sov_flag_co.paa";
+        name = "The Soviet Armed Forces"; 
+        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
+        file = "USSR_inv";
+        description = "I think I have snow in my pants";
+    };
 };

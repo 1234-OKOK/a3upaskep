@@ -333,9 +333,9 @@ _sfLoadoutData set ["sidearms", [
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _eliteLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
-_eliteLoadoutData set ["vests", ["rhs_6b5", "rhs_6b5_rifleman", "rhs_6b5_sniper"]];
-_eliteLoadoutData set ["MEDvests", ["rhs_6b5_medic"]];
-_eliteLoadoutData set ["GLvests", ["rhs_6b5_officer"]];
+_eliteLoadoutData set ["vests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
+_eliteLoadoutData set ["MEDvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
+_eliteLoadoutData set ["GLvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
 _eliteLoadoutData set ["backpacks", ["rhs_tortila_olive", "rhs_rk_sht_30_olive", "rhs_rk_sht_30_olive_engineer_empty"]];
 _eliteLoadoutData set ["atBackpacks", ["rhs_rpg_2"]];
 _eliteLoadoutData set ["helmets", ["UK3CB_ADA_B_H_6b27m_OLI", "UK3CB_ADA_B_H_6b27m_ESS_OLI"]];
@@ -396,13 +396,13 @@ _eliteLoadoutData set ["sniperRifles", [
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militaryLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
-_militaryLoadoutData set ["vests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
-_militaryLoadoutData set ["MEDvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
-_militaryLoadoutData set ["SLvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
-_militaryLoadoutData set ["SNIvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
-_militaryLoadoutData set ["backpacks", ["B_FieldPack_oli", "rhs_rk_sht_30_olive", "rhs_rk_sht_30_olive_engineer_empty"]];
+_militaryLoadoutData set ["vests", ["V_TacVest_oli"]];
+_militaryLoadoutData set ["MEDvests", ["V_TacVest_oli"]];
+_militaryLoadoutData set ["SLvests", ["V_TacVest_oli"]];
+_militaryLoadoutData set ["SNIvests", ["V_TacVest_oli"]];
+_militaryLoadoutData set ["backpacks", ["B_FieldPack_oli", "rhs_rk_sht_30_olive", "rhs_rk_sht_30_olive_engineer_empty", "UK3CB_GAF_B_B_ENG_OLI", "UK3CB_LSM_B_B_CARRYALL_OLI"]];
 _militaryLoadoutData set ["atBackpacks", ["rhs_rpg_2"]];
-_militaryLoadoutData set ["helmets", ["rhs_ssh60", "UK3CB_TKA_I_H_SSh68_Oli"]];
+_militaryLoadoutData set ["helmets", ["rhs_ssh60"]];
 
 _militaryLoadoutData set ["ATLaunchers", [
 ["rhs_weap_rpg7", "", "", "rhs_acc_pgo7v3", ["rhs_rpg7_PG7VL_mag", "rhs_rpg7_PG7VL_mag", "rhs_rpg7_OG7V_mag"], [], ""],
@@ -474,7 +474,7 @@ _militaryLoadoutData set ["sniperRifles", [
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _policeLoadoutData set ["uniforms", ["U_I_C_Soldier_Para_5_F", "U_I_C_Soldier_Para_4_F", "U_I_C_Soldier_Para_3_F", "U_I_C_Soldier_Para_2_F", "U_I_C_Soldier_Para_1_F"]];
-_policeLoadoutData set ["vests", ["V_TacVest_brn", "V_TacVest_khk", "V_TacVest_oli"]];
+_policeLoadoutData set ["vests", ["UK3CB_TKP_B_V_TacVest_Blk"]];
 _policeLoadoutData set ["helmets", ["UK3CB_LSM_B_H_Field_Cap_OLI", "UK3CB_LSM_B_H_M88_Field_Cap_OLI", "UK3CB_LSM_B_H_BoonieHat_OLI", "H_Cap_oli", "H_Booniehat_oli"]];
 _policeLoadoutData set ["carbines", [
 ["uk3cb_enfield_no4", "", "", "", ["uk3cb_no4_enfield_303_10Rnd_magazine_RT"], [], ""],
