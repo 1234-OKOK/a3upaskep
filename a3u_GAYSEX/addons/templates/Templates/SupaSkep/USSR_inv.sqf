@@ -540,7 +540,7 @@ _militiaLoadoutData set ["SNIvests", ["rhs_6b2_SVD"]];
 _militiaLoadoutData set ["backpacks", ["rhs_rd54", "rhs_rd54_vest", "UK3CB_ION_B_B_ENG_DES", "B_Messenger_Coyote_F"]];
 _militiaLoadoutData set ["medBackpacks", ["rhs_medic_bag"]];
 _militiaLoadoutData set ["atBackpacks", ["rhs_rpg_2", "rhs_rpg_empty", "rhs_rpg_6b2", "rhs_rpg_6b3"]];
-_militiaLoadoutData set ["helmets", ["rhs_pilotka", "rhs_pilotka", "rhs_fieldcap_m88", "rhs_fieldcap_m88_back", "H_Bandanna_cbr", "rhs_cossack_visor_cap_tan", "UK3CB_CW_SOV_O_EARLY_H_Officer_Cap", "UK3CB_CW_SOV_O_LATE_H_Officer_Cap"]];
+_militiaLoadoutData set ["helmets", ["rhs_pilotka", "rhs_pilotka", "rhs_pilotka", "rhs_pilotka", "rhs_fieldcap_m88", "rhs_fieldcap_m88_back", "H_Bandanna_cbr", "rhs_cossack_visor_cap_tan", "UK3CB_CW_SOV_O_EARLY_H_Officer_Cap", "UK3CB_CW_SOV_O_LATE_H_Officer_Cap"]];
 _militiaLoadoutData set ["slHat", ["rhs_pilotka"]];
 _militiaLoadoutData set ["sniHats", ["rhs_pilotka"]];
 
@@ -591,7 +591,7 @@ _militiaLoadoutData set ["antiInfantryGrenades", ["rhs_mag_rgd5", "rhs_mag_f1"]]
 //    Misc Loadouts     //
 //////////////////////////
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
-_crewLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_LATE_U_Crew_Uniform_01_TTSKO"]];
+_crewLoadoutData set ["uniforms", ["rhs_uniform_afghanka_boots"]];
 _crewLoadoutData set ["vests", ["rhs_6b2", "rhs_6b2_holster"]];
 _crewLoadoutData set ["helmets", ["rhs_tsh4"]];
 _crewLoadoutData set ["carbines", [
@@ -599,7 +599,7 @@ _crewLoadoutData set ["carbines", [
 ]];	
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "UK3CB_CW_SOV_O_LATE_U_H_Pilot_Uniform_01_TTSKO"]];			
+_pilotLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_LATE_U_J_Pilot_Uniform_01_OLI"]];			
 _pilotLoadoutData set ["vests", ["rhs_6b2", "rhs_6b2_holster"]];			
 _pilotLoadoutData set ["helmets", ["rhs_zsh7a_mike", "rhs_zsh7a_mike_alt", "rhs_zsh7a_mike_green", "rhs_zsh7a_mike_green_alt"]];
 _pilotLoadoutData set ["carbines", [
