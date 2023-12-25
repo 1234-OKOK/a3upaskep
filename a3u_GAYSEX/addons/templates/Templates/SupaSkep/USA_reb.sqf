@@ -133,7 +133,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["UK3CB_CW_US_B_LATE_AH1Z_GS", 12000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["UK3CB_CW_US_B_LATE_A10", 14000, "PLANE", {tierWar > 5 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}],
 
-    ["UK3CB_CW_US_B_LATE_UH1H_GUNSHIP", 80000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["UK3CB_CW_US_B_LATE_UH1H_GUNSHIP", 8000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["UK3CB_MDF_B_Bell412_Armed", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["UK3CB_CW_US_B_LATE_AH64_GS", 14000, "HELI", {tierWar > 5 &&{ {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}}]
 ]] call _fnc_saveToTemplate;

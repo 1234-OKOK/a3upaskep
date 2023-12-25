@@ -205,7 +205,7 @@ _loadoutData set ["goggles", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhs_uniform_afghanka"]];
+_sfLoadoutData set ["uniforms", ["rhs_uniform_afghanka"]];
 _sfLoadoutData set ["vests", ["rhs_6b2_lifchik"]];
 _sfLoadoutData set ["MEDvests", ["rhs_6b2_lifchik"]];
 _sfLoadoutData set ["GLvests", ["rhs_6b2_lifchik"]];
@@ -221,6 +221,7 @@ _sfLoadoutData set ["ATLaunchers", [
 ["rhs_weap_rpg7", "", "", "rhs_acc_1pn93_2", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_TBG7V_mag", "rhs_rpg7_TBG7V_mag"], [], ""],
 ["rhs_weap_rpg7", "", "", "rhs_acc_pgo7v3", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_OG7V_mag", "rhs_rpg7_OG7V_mag"], [], ""],
 ["rhs_weap_rpg7", "", "", "rhs_acc_1pn93_2", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_OG7V_mag", "rhs_rpg7_OG7V_mag"], [], ""],
+["launch_O_Vorona_brown_F", "", "", "", ["Vorona_HEAT"], [], ""],
 ["launch_O_Vorona_brown_F", "", "", "", ["Vorona_HEAT"], [], ""],
 ["launch_O_Vorona_brown_F", "", "", "", ["Vorona_HEAT"], [], ""],
 ["launch_O_Vorona_brown_F", "", "", "", ["Vorona_HEAT"], [], ""]
@@ -318,7 +319,7 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_eliteLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
+_eliteLoadoutData set ["uniforms", ["rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
 _eliteLoadoutData set ["vests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
 _eliteLoadoutData set ["MEDvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
 _eliteLoadoutData set ["GLvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
@@ -334,6 +335,7 @@ _eliteLoadoutData set ["ATLaunchers", [
 ["rhs_weap_rpg7", "", "", "rhs_acc_1pn93_2", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_TBG7V_mag", "rhs_rpg7_TBG7V_mag"], [], ""],
 ["rhs_weap_rpg7", "", "", "rhs_acc_pgo7v3", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_OG7V_mag", "rhs_rpg7_OG7V_mag"], [], ""],
 ["rhs_weap_rpg7", "", "", "rhs_acc_1pn93_2", ["rhs_rpg7_PG7VS_mag", "rhs_rpg7_OG7V_mag", "rhs_rpg7_OG7V_mag"], [], ""],
+["launch_O_Vorona_green_F", "", "", "", ["Vorona_HEAT"], [], ""],
 ["launch_O_Vorona_green_F", "", "", "", ["Vorona_HEAT"], [], ""],
 ["launch_O_Vorona_green_F", "", "", "", ["Vorona_HEAT"], [], ""]
 ]];
@@ -381,7 +383,7 @@ _eliteLoadoutData set ["sniperRifles", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Early_U_H_Pilot_Uniform_01_KHK", "rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
+_militaryLoadoutData set ["uniforms", ["rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
 _militaryLoadoutData set ["vests", ["V_TacVest_oli"]];
 _militaryLoadoutData set ["MEDvests", ["V_TacVest_oli"]];
 _militaryLoadoutData set ["SLvests", ["V_TacVest_oli"]];
@@ -538,8 +540,8 @@ _militiaLoadoutData set ["sidearms", ["rhs_weap_makarov_pm", "rhs_weap_tt33"]];
 //    Misc Loadouts     //
 //////////////////////////
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
-_crewLoadoutData set ["uniforms", ["rhs_uniform_afghanka"]];	
-_crewLoadoutData set ["vests", ["UK3CB_ARD_O_V_6b23_vydra_3m_TAN"]];
+_crewLoadoutData set ["uniforms", ["rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];	
+_crewLoadoutData set ["vests", ["V_TacVest_oli"]];
 _crewLoadoutData set ["helmets", ["UK3CB_ARD_O_H_Crew_Cap"]];
 _crewLoadoutData set ["carbines", [
 ["uk3cb_ppsh41", "", "", "", ["uk3cb_PPSH_71rnd_magazine_RT"], [], ""]
@@ -547,7 +549,7 @@ _crewLoadoutData set ["carbines", [
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _pilotLoadoutData set ["uniforms", ["U_C_WorkerCoveralls"]];			
-_pilotLoadoutData set ["vests", ["UK3CB_ADA_B_V_TacVest_KHK"]];			
+_pilotLoadoutData set ["vests", ["V_TacVest_oli"]];			
 _pilotLoadoutData set ["helmets", ["rhs_zsh7a_mike_green", "rhs_zsh7a_mike_green_alt", "rhs_zsh7a_mike_alt", "rhs_zsh7a_mike"]];	
 _pilotLoadoutData set ["carbines", [
 ["uk3cb_ppsh41", "", "", "", ["uk3cb_PPSH_71rnd_magazine_RT"], [], ""]
