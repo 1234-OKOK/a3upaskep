@@ -225,10 +225,10 @@ _loadoutData set ["glasses", [
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Late_U_Spetsnaz_Uniform_Gorka_01_KLMK"]];
+_sfLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_Late_U_Spetsnaz_Uniform_Gorka_01_KLMK", "UK3CB_CW_SOV_O_Late_U_Spetsnaz_Uniform_Gorka_01_KLMK", "UK3CB_CW_SOV_O_Late_U_Spetsnaz_Uniform_Gorka_01_KLMK", "UK3CB_CW_SOV_O_Late_U_CombatUniform_Ghillie_01_KLMK"]];
 _sfLoadoutData set ["vests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
 _sfLoadoutData set ["GLvests", ["rhs_6b23_6sh116_od", "rhs_6b23_6sh116_vog_od"]];
-_sfLoadoutData set ["backpacks", ["rhs_tortila_olive", "UK3CB_LSM_B_B_CARRYALL_OLI", "B_Carryall_oli", "UK3CB_GAF_B_B_ENG_OLI", "rhs_rk_sht_30_olive_engineer_empty", "rhs_rk_sht_30_olive"]];
+_sfLoadoutData set ["backpacks", ["rhs_tortila_olive", "rhs_rk_sht_30_olive_engineer_empty", "rhs_rk_sht_30_olive", "B_Carryall_oli"]];
 _sfLoadoutData set ["atBackpacks", ["rhs_rpg_empty"]];
 _sfLoadoutData set ["helmets", ["rhs_altyn_visordown", "rhs_altyn", "rhs_altyn_visordown", "rhs_altyn"]];
 _sfLoadoutData set ["sniHats", ["rhs_beanie_green", "rhs_altyn_visordown", "rhs_altyn", "rhs_altyn_visordown", "rhs_altyn"]];
@@ -330,7 +330,7 @@ _eliteLoadoutData set ["uniforms", ["rhs_uniform_afghanka_para_ttsko_2"]];
 _eliteLoadoutData set ["vests", ["rhs_6b3_AK", "rhs_6b3_AK_2", "rhs_6b3_AK_3"]];
 _eliteLoadoutData set ["SLvests", ["rhs_6b3_VOG_2", "rhs_6b3_VOG", "rhs_6b3_RPK"]];
 _eliteLoadoutData set ["SNIvests", ["rhs_6b3_off"]];
-_eliteLoadoutData set ["backpacks", ["B_FieldPack_oli", "rhs_rk_sht_30_olive"]];
+_eliteLoadoutData set ["backpacks", ["UK3CB_LSM_B_B_CARRYALL_OLI", "UK3CB_GAF_B_B_ENG_OLI", "B_FieldPack_oli"]];
 _eliteLoadoutData set ["atBackpacks", ["rhs_rpg_2", "rhs_rpg_6b3"]];
 _eliteLoadoutData set ["helmets", ["rhs_stsh81_butan", "rhs_beret_vdv_early", "rhs_beret_vdv_early"]];
 _eliteLoadoutData set ["slHat", ["rhs_beret_vdv_early"]];
@@ -441,11 +441,11 @@ _eliteLoadoutData set ["sidearms", ["rhs_weap_pya", "rhs_weap_6p53"]];
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militaryLoadoutData set ["uniforms", ["rhs_uniform_afghanka", "rhs_uniform_afghanka_boots"]];
-_militaryLoadoutData set ["vests", ["rhs_6b5_rifleman_khaki"]];
+_militaryLoadoutData set ["vests", ["rhs_6b5_rifleman_khaki", "rhs_6b5_khaki", "rhs_6b5_medic_khaki"]];
 _militaryLoadoutData set ["SLvests", ["rhs_6b5_officer_khaki"]];
 _militaryLoadoutData set ["SNIvests", ["rhs_6b5_sniper_khaki"]];
-_militaryLoadoutData set ["GLvests", ["rhs_6b5_medic_khaki"]];
-_militaryLoadoutData set ["backpacks", ["rhs_rd54", "rhs_rd54_vest", "B_Carryall_cbr", "B_FieldPack_cbr"]];
+_militaryLoadoutData set ["GLvests", ["rhs_6b5_rifleman_khaki", "rhs_6b5_khaki", "rhs_6b5_medic_khaki"]];
+_militaryLoadoutData set ["backpacks", ["rhs_rd54", "rhs_rd54_vest", "B_Carryall_cbr"]];
 _militaryLoadoutData set ["atBackpacks", ["rhs_rpg_2", "rhs_rpg_empty", "rhs_rpg_6b2", "rhs_rpg_6b3"]];
 _militaryLoadoutData set ["helmets", ["rhs_ssh68_2", "rhs_ssh60", "rhs_ssh60"]];
 _militaryLoadoutData set ["slHat", ["rhs_ssh60"]];
@@ -530,15 +530,15 @@ _policeLoadoutData set ["sidearms", ["rhs_weap_makarov_pm"]];
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militiaLoadoutData set ["uniforms", ["rhs_uniform_afghanka", "rhs_uniform_afghanka_boots"]];
-_militiaLoadoutData set ["vests", ["rhs_6b2_lifchik"]];
-_militiaLoadoutData set ["ATvests", ["rhs_6b2_lifchik"]];
-_militiaLoadoutData set ["GLvests", ["rhs_6b2_lifchik"]];
-_militiaLoadoutData set ["MGvests", ["rhs_6b2_RPK"]];
-_militiaLoadoutData set ["SNIvests", ["rhs_6b2_SVD"]];
-_militiaLoadoutData set ["backpacks", ["rhs_rd54", "rhs_rd54_vest", "UK3CB_ION_B_B_ENG_DES", "B_Messenger_Coyote_F"]];
+_militiaLoadoutData set ["vests", ["rhs_lifchik_NCO", "rhs_lifchik", "rhs_lifchik_light"]];
+_militiaLoadoutData set ["ATvests", ["rhs_lifchik_NCO", "rhs_lifchik", "rhs_lifchik_light"]];
+_militiaLoadoutData set ["GLvests", ["rhs_lifchik_vog"]];
+_militiaLoadoutData set ["MGvests", ["rhs_lifchik_NCO", "rhs_lifchik", "rhs_lifchik_light"]];
+_militiaLoadoutData set ["SNIvests", ["rhs_lifchik_NCO", "rhs_lifchik", "rhs_lifchik_light"]];
+_militiaLoadoutData set ["backpacks", ["rhs_rd54", "rhs_rd54_vest", "B_Messenger_Coyote_F", "B_LegStrapBag_coyote_F", "B_FieldPack_cbr"]];
 _militiaLoadoutData set ["medBackpacks", ["rhs_medic_bag"]];
 _militiaLoadoutData set ["atBackpacks", ["rhs_rpg_2", "rhs_rpg_empty", "rhs_rpg_6b2", "rhs_rpg_6b3"]];
-_militiaLoadoutData set ["helmets", ["rhs_pilotka", "rhs_pilotka", "rhs_pilotka", "rhs_pilotka", "rhs_fieldcap_m88", "rhs_fieldcap_m88_back", "H_Bandanna_cbr", "rhs_cossack_visor_cap_tan", "UK3CB_CW_SOV_O_EARLY_H_Officer_Cap", "UK3CB_CW_SOV_O_LATE_H_Officer_Cap"]];
+_militiaLoadoutData set ["helmets", ["rhs_pilotka", "rhs_pilotka", "rhs_pilotka", "rhs_pilotka", "rhs_fieldcap_m88", "rhs_fieldcap_m88_back", "rhs_fieldcap_khk", "UK3CB_CW_SOV_O_EARLY_H_FieldCap_KHK", "UK3CB_CW_SOV_O_EARLY_H_Officer_Cap", "UK3CB_CW_SOV_O_LATE_H_Officer_Cap"]];
 _militiaLoadoutData set ["slHat", ["rhs_pilotka"]];
 _militiaLoadoutData set ["sniHats", ["rhs_pilotka"]];
 
@@ -590,16 +590,16 @@ _militiaLoadoutData set ["antiInfantryGrenades", ["rhs_mag_rgd5", "rhs_mag_f1"]]
 //////////////////////////
 private _crewLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData; 
 _crewLoadoutData set ["uniforms", ["rhs_uniform_afghanka_boots"]];
-_crewLoadoutData set ["vests", ["rhs_6b2", "rhs_6b2_holster"]];
-_crewLoadoutData set ["helmets", ["rhs_tsh4"]];
+_crewLoadoutData set ["vests", ["rhs_6b2_lifchik"]];
+_crewLoadoutData set ["helmets", ["rhs_tsh4", "rhs_tsh4_ess"]];
 _crewLoadoutData set ["carbines", [
 ["rhs_weap_aks74u", "rhs_acc_pgs64_74u", "", "", ["rhs_30Rnd_545x39_AK_green"], [], ""]
 ]];	
 
 private _pilotLoadoutData = _militaryLoadoutData call _fnc_copyLoadoutData;
 _pilotLoadoutData set ["uniforms", ["UK3CB_CW_SOV_O_LATE_U_J_Pilot_Uniform_01_OLI"]];			
-_pilotLoadoutData set ["vests", ["rhs_6b2", "rhs_6b2_holster"]];			
-_pilotLoadoutData set ["helmets", ["rhs_zsh7a_mike", "rhs_zsh7a_mike_alt", "rhs_zsh7a_mike_green", "rhs_zsh7a_mike_green_alt"]];
+_pilotLoadoutData set ["vests", ["V_TacVest_oli"]];			
+_pilotLoadoutData set ["helmets", ["rhs_zsh7a_mike_green", "rhs_zsh7a_mike_green_alt"]];
 _pilotLoadoutData set ["carbines", [
 ["rhs_weap_aks74u", "rhs_acc_pgs64_74u", "", "", ["rhs_30Rnd_545x39_AK_green"], [], ""]
 ]];	
