@@ -129,11 +129,11 @@ _loadoutData set ["NVGs", ["UK3CB_Gloves_black_NVG"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["rangefinders", ["rhs_pdu4"]];
 
-_loadoutData set ["traitorUniforms", ["U_I_C_Soldier_Bandit_1_F"]];
-_loadoutData set ["traitorVests", ["rhsgref_chicom"]];
+_loadoutData set ["traitorUniforms", ["U_I_C_Soldier_Bandit_5_F", "U_I_C_Soldier_Bandit_4_F", "U_I_C_Soldier_Bandit_3_F", "U_I_C_Soldier_Bandit_2_F", "U_I_C_Soldier_Bandit_1_F"]];
+_loadoutData set ["traitorVests", ["V_TacVest_oli"]];
 _loadoutData set ["traitorHats", ["H_Cap_oli", "H_Booniehat_oli"]];
 
-_loadoutData set ["officerUniforms", ["rhsgref_uniform_TLA_1"]];
+_loadoutData set ["officerUniforms", ["rhsgref_uniform_TLA_2", "rhsgref_uniform_TLA_1"]];
 _loadoutData set ["officerVests", ["rhs_vest_pistol_holster", "rhs_gear_OFF", "rhs_vest_commander"]];
 _loadoutData set ["officerHats", ["H_Beret_blk"]];
 
@@ -150,7 +150,7 @@ _loadoutData set ["medBackpacks", ["UK3CB_KDF_B_B_Sidor_MD_OLI"]];
 _loadoutData set ["atBackpacks", []];
 _loadoutData set ["longRangeRadios", ["rhs_r148"]];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["H_Cap_oli  ", "UK3CB_TKA_I_H_Patrolcap_OLI"]];
+_loadoutData set ["slHat", ["H_Cap_oli", "UK3CB_TKA_I_H_Patrolcap_OLI"]];
 _loadoutData set ["sniHats", ["H_Booniehat_oli", "H_Hat_Safari_olive_F"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
@@ -205,7 +205,7 @@ _loadoutData set ["goggles", []];
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData set ["uniforms", ["rhs_uniform_afghanka"]];
+_sfLoadoutData set ["uniforms", ["rhs_uniform_gorka_r_y", "rhs_uniform_gorka_r_y_gloves"]];
 _sfLoadoutData set ["vests", ["rhs_6b2_lifchik"]];
 _sfLoadoutData set ["MEDvests", ["rhs_6b2_lifchik"]];
 _sfLoadoutData set ["GLvests", ["rhs_6b2_lifchik"]];

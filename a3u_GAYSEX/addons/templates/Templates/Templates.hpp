@@ -7,7 +7,7 @@ class Templates {
         name = "The United States Army"; 
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "USA_reb";
-        description = "one of the largest military organisations in the world, responsible for the US Military's land based efforts. The US Army has gained much experience as a result of their extensive participation in warfare";
+        description = "One of the largest military organisations in the world, responsible for the US Military's land based efforts. The US Army has gained much experience as a result of their extensive participation in warfare";
     };
     class 3CBF_ESP : 3CBF_Base
     {
@@ -27,7 +27,7 @@ class Templates {
         file = "CUBA_Riv";
         description = "Mason killed a double...";
     };
-     class 3CBF_GRE : 3CBF_Base
+    class 3CBF_GRE : 3CBF_Base
     {
         side = "Occ";
         flagTexture = "a3\data_f\flags\flag_fia_co.paa";
@@ -44,5 +44,24 @@ class Templates {
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "USSR_inv";
         description = "I think I have snow in my pants";
+    };
+    class IFA3_BASE;
+    class IFA3_ITA : IFA3_BASE
+    {
+        side = "Riv";
+        flagTexture = "ww2\core_t\if_decals_t\german\flag_ger_co.paa";
+        name = "Royal Italian Army"; 
+        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
+        file = "ITA_Riv";
+        description = "The land force of the Kingdom of Italy, established with the proclamation of the Kingdom of Italy";
+    };
+    class IFA3_BRI : IFA3_BASE
+    {
+        side = "Reb";
+        flagTexture = "\A3\Data_F\Flags\flag_uk_co.paa";
+        name = "British Army"; 
+        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
+        file = "BRI_Reb";
+        description = "A small volunteer professional army";
     };
 };
