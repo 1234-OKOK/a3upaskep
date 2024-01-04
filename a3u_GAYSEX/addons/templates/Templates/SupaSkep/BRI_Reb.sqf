@@ -92,12 +92,12 @@ private _initialRebelEquipment = [
     "LIB_PIAT_Rifle", "LIB_1Rnd_89m_PIAT", 
     "LIB_PIAT", "LIB_1Rnd_89m_G_PIAT",
     "LIB_Bagpipes", "M2_Flamethrower_01_F",
-    "fow_w_ithaca37", "fow_w_ithaca37",
+    "fow_w_ithaca37", "fow_w_ithaca37", "fow_5Rnd_12G_Pellets",
     "LIB_MillsBomb", "LIB_No77", "LIB_No82", "LIB_US_M18", "LIB_US_M18_Green", "LIB_US_M18_Red", "LIB_US_M18_Yellow", "fow_e_tnt_halfpound",
     ["LIB_US_TNT_4pound_mag", 10], ["LIB_Ladung_Big_MINE_mag", 10], ["LIB_Ladung_Small_MINE_mag", 3], ["LIB_US_M1A1_ATMINE_mag", 3],
     "LIB_Binocular_UK", "LIB_GER_Gloves3", "LIB_GER_Headset",
     "fow_v_uk_sten","fow_v_uk_bren", "fow_v_uk_para_base", "fow_v_uk_para_bren", "fow_v_uk_para_sten", "fow_v_uk_base", "fow_v_uk_officer", "fow_v_uk_sten_green", "fow_v_uk_bren_green", "fow_v_uk_para_base_green", "fow_v_uk_para_bren_green", "fow_v_uk_para_sten_green", "fow_v_uk_base_green", "fow_v_uk_officer_green",
-    "B_Carryall_khk", "B_FieldPack_khk", "fow_b_uk_bergenpack", "fow_b_uk_piat", "fow_b_uk_p37_shovel", "fow_b_uk_p37_radio", "fow_b_uk_p37", "41_Flammenwerfer_Balloons", "fow_b_parachute"
+    "B_Carryall_khk", "B_FieldPack_khk", "fow_b_uk_bergenpack", "fow_b_uk_piat", "fow_b_uk_p37_shovel", "fow_b_uk_p37_radio", "fow_b_uk_p37", "M2_Flamethrower_Balloons_Pipe", "fow_b_parachute"
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
@@ -171,10 +171,6 @@ private _rebUniforms = [
     "fow_h_uk_mk2_net",
     "fow_h_uk_mk2_net_foliage",
     "fow_h_uk_mk2_net_camo",
-    "fow_h_uk_mk2_para",
-    "fow_h_uk_mk2_para_camo",
-    "fow_h_uk_pol_mk2_para",
-    "fow_h_uk_pol_mk2_para_camo",
     "fow_h_uk_woolen_hat",
     "fow_h_uk_woolen_hat02",
     "fow_h_uk_jungle_hat_03",

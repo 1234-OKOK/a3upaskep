@@ -32,7 +32,7 @@
 ["vehiclesAPCs", ["LIB_SdKfz251","LIB_SdKfz251_FFV", "fow_v_sdkfz_250_9_ger_heer", "fow_v_sdkfz_250_9_camo_foliage_ger_heer", "fow_v_sdkfz_250_9_camo_ger_heer"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["FA_Sdkfz231", "FA_BA10M_Captured", "FA_BA64_Captured"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["LIB_PzKpfwVI_E", "rp_LIB_StuG_III_G", "rp_LIB_SdKfz124", "LIB_T34_76_captured", "LIB_SU85_base_captured"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["LIB_FlakPanzerIV_Wirbelwind"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["LIB_SdKfz_7_AA"]] call _fnc_saveToTemplate;
 ["vehiclesAirborne", ["fow_v_sdkfz_250_ger_heer","fow_v_sdkfz_250_camo_ger_heer", "fow_v_sdkfz_250_camo_foliage_ger_heer"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  ["FA_Panzer2", "FA_Pz38t", "FA_T26_Captured"]] call _fnc_saveToTemplate;
 
@@ -66,8 +66,8 @@
 ["vehiclesPolice", ["LIB_Kfz1_sernyt","LIB_Kfz1_Hood_sernyt"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["fow_w_mg42_deployed_high_ger_heer"]] call _fnc_saveToTemplate;
-["staticAT", ["fow_w_pak40_camo_foliage_ger_heer", "fow_w_pak40_camo_ger_heer", "fow_w_pak40_gray_ger_heer"]] call _fnc_saveToTemplate;
-["staticAA", ["LIB_FlaK_38"]] call _fnc_saveToTemplate;
+["staticAT", ["fow_w_pak40_camo_foliage_ger_heer", "fow_w_pak40_camo_ger_heer", "fow_w_pak40_gray_ger_heer", "LIB_leFH18_AT"]] call _fnc_saveToTemplate;
+["staticAA", ["fow_w_mg42_deployed_high_ger_heer"]] call _fnc_saveToTemplate;
 ["staticMortars", ["LIB_GrWr34"]] call _fnc_saveToTemplate;
 ["staticHowitzers", ["LIB_leFH18"]] call _fnc_saveToTemplate;
 
@@ -123,7 +123,6 @@
     "WhiteHead_30",
     "WhiteHead_31",
     "WhiteHead_32"]] call _fnc_saveToTemplate;
-
 
 //////////////////////////
 //       Loadouts       //
@@ -229,7 +228,7 @@ _loadoutData set ["items_unarmed_extras", []];
 //    Special Forces Loadout Data    //
 ///////////////////////////////////////
 
-private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
+private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks // faces of war
 _sfLoadoutData set ["uniforms", ["fow_u_ger_fall_03_private"]];
 _sfLoadoutData set ["vests", ["fow_v_fall_bandoleer","fow_v_heer_mg","fow_v_heer_k98_light","fow_v_heer_k98_ass", "fow_v_heer_k98", "fow_v_heer_mp40", "fow_v_heer_g43", "fow_v_heer_mp40_nco"]];
 _sfLoadoutData set ["glVests", ["fow_v_heer_k98"]];
@@ -244,16 +243,19 @@ _sfLoadoutData set ["binoculars", ["LIB_Binocular_GER"]];
 _sfLoadoutData set ["rifles", [
     ["LIB_G3340", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
-    ["LIB_FG42G", "", "", "", ["LIB_20Rnd_792x57"], [], ""]
+    ["LIB_FG42G", "", "", "", ["LIB_20Rnd_792x57"], [], ""],
+    ["LIB_FG42G", "", "", "LIB_Optic_Zf4", ["LIB_20Rnd_792x57"], [], ""]
     ]];
 		
 _sfLoadoutData set ["carbines", [
     ["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""],
-    ["LIB_FG42G", "", "", "", ["LIB_20Rnd_792x57"], [], ""]
+    ["LIB_FG42G", "", "", "", ["LIB_20Rnd_792x57"], [], ""],
+    ["LIB_FG42G", "", "", "LIB_Optic_Zf4", ["LIB_20Rnd_792x57"], [], ""]
     ]];
 		
 _sfLoadoutData set ["grenadeLaunchers", [
-    ["LIB_FG42G", "", "", "", ["LIB_20Rnd_792x57"], [], ""]
+    ["LIB_FG42G", "", "", "", ["LIB_20Rnd_792x57"], [], ""],
+    ["LIB_FG42G", "", "", "LIB_Optic_Zf4", ["LIB_20Rnd_792x57"], [], ""]
     ]];
 	
 _sfLoadoutData set ["SMGs", [
@@ -269,7 +271,8 @@ _sfLoadoutData set ["marksmanRifles", [
     ]];
 		
 _sfLoadoutData set ["sniperRifles", [	
-	["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]]];
+	["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]
+    ]];
 	
 _sfLoadoutData set ["sidearms", [
     ["fow_w_p640p", "", "", "", ["fow_13Rnd_9x19"], [], ""]
@@ -279,13 +282,13 @@ _sfLoadoutData set ["sidearms", [
 //    Elite Loadout Data    //
 /////////////////////////////////
 
-private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
+private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks // all ifa
 _eliteLoadoutData set ["uniforms", ["U_LIB_GER_Soldier_camo2", "U_LIB_GER_Soldier_camo", "U_LIB_GER_Soldier_camo4", "U_LIB_GER_Soldier_camo3", "U_LIB_GER_Soldier_camo5"]];
 _eliteLoadoutData set ["slUniforms", ["U_LIB_GER_Soldier_camo2", "U_LIB_GER_Soldier_camo", "U_LIB_GER_Soldier_camo4", "U_LIB_GER_Soldier_camo3", "U_LIB_GER_Soldier_camo5"]];
-_eliteLoadoutData set ["vests", ["V_LIB_DAK_PioneerVest","V_LIB_DAK_VestMP40","V_LIB_DAK_VestKar98","V_LIB_DAK_VestG43", "V_LIB_DAK_VestMG", "V_LIB_DAK_VestUnterofficer", "V_LIB_DAK_FieldOfficer"]];
+_eliteLoadoutData set ["vests", ["V_LIB_DAK_VestMG","V_LIB_DAK_VestKar98","V_LIB_DAK_VestMP40","V_LIB_DAK_VestUnterofficer", "V_LIB_DAK_PioneerVest"]];
 _eliteLoadoutData set ["glVests", ["V_LIB_DAK_VestKar98"]];
 _eliteLoadoutData set ["Hvests", ["V_LIB_DAK_VestMP40"]];
-_eliteLoadoutData set ["backpacks", ["B_LIB_GER_A_frame_zeltbahn", "B_LIB_GER_A_frame", "B_LIB_GER_A_frame_kit", "B_LIB_GER_SapperBackpack_empty", "B_LIB_GER_Backpack", "B_LIB_GER_Radio", "B_LIB_GER_Panzer_Empty", "B_LIB_GER_Tonister34_cowhide", "B_LIB_GER_MedicBackpack_Empty"]];
+_eliteLoadoutData set ["backpacks", ["B_LIB_GER_Radio", "B_LIB_GER_A_frame_kit", "B_LIB_GER_A_frame_zeltbahn", "B_LIB_GER_A_frame", "B_LIB_GER_SapperBackpack_empty", "B_LIB_GER_Backpack", "B_LIB_GER_Tonister34_cowhide", "B_LIB_GER_Tonister34_cowhide", "B_LIB_GER_MedicBackpack_Empty", "B_LIB_GER_Radio_ACRE2", "B_LIB_GER_Panzer_Empty"]];
 _eliteLoadoutData set ["helmets", ["H_LIB_GER_HelmetCamo2", "H_LIB_GER_HelmetCamo", "H_LIB_GER_HelmetCamo4"]];
 _eliteLoadoutData set ["sniHats", ["H_LIB_GER_HelmetCamo2", "H_LIB_GER_HelmetCamo", "H_LIB_GER_HelmetCamo4"]];
 _eliteLoadoutData set ["slHat", ["H_LIB_GER_OfficerCap"]];
@@ -293,13 +296,11 @@ _eliteLoadoutData set ["binoculars", ["LIB_Binocular_GER"]];
 
 _eliteLoadoutData set ["rifles", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
-    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""]
     ]];
 
 _eliteLoadoutData set ["carbines", [
-	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
 	["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""]
@@ -307,13 +308,12 @@ _eliteLoadoutData set ["carbines", [
 
 _eliteLoadoutData set ["SMGs", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""],
     ["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""]
     ]];
 
 _eliteLoadoutData set ["grenadeLaunchers", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
-    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
-    ["LIB_MP44", "lib_acc_gw_sb_empty", "", "", ["LIB_30Rnd_792x33","LIB_30Rnd_792x33","LIB_30rnd_792x33_t"], ["LIB_1Rnd_G_PZGR_40"], ""],
 	["LIB_K98_Late", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57"], ["LIB_1Rnd_G_PZGR_40"], ""]
     ]];
 
@@ -323,12 +323,12 @@ _eliteLoadoutData set ["machineGuns", [
 
 _eliteLoadoutData set ["marksmanRifles", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""]
     ]];
 
 _eliteLoadoutData set ["sniperRifles", [
 	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
-    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
     ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]
 	]];
@@ -341,13 +341,13 @@ _eliteLoadoutData set ["sidearms", [
 //    Military Loadout Data    //
 /////////////////////////////////
 
-private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
+private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks // both up
 _militaryLoadoutData set ["uniforms", ["U_LIB_GER_Pionier","U_LIB_GER_Oberschutze", "U_LIB_GER_Schutze", "U_LIB_GER_Schutze_HBT", "U_LIB_GER_MG_schutze_HBT", "U_LIB_GER_Gefreiter", "U_LIB_GER_MG_schutze", "U_LIB_GER_Medic"]];
 _militaryLoadoutData set ["slUniforms", ["U_LIB_GER_Unterofficer", "U_LIB_GER_Unterofficer_HBT"]];
-_militaryLoadoutData set ["vests", ["V_LIB_GER_PioneerVest", "V_LIB_GER_VestUnterofficer","V_LIB_GER_VestMP40","V_LIB_GER_VestKar98","V_LIB_GER_VestMG", "V_LIB_GER_FieldOfficer"]];
+_militaryLoadoutData set ["vests", ["V_LIB_GER_PioneerVest", "V_LIB_GER_VestUnterofficer","V_LIB_GER_VestMP40","V_LIB_GER_VestKar98","V_LIB_GER_VestMG"]];
 _militaryLoadoutData set ["glVests", ["V_LIB_GER_VestKar98"]];
 _militaryLoadoutData set ["Hvests", ["V_LIB_GER_VestMP40"]];
-_militaryLoadoutData set ["backpacks", ["B_LIB_GER_A_frame_kit", "B_LIB_GER_SapperBackpack_empty", "B_LIB_GER_Backpack", "B_LIB_GER_Radio", "B_LIB_GER_Panzer_Empty", "B_LIB_GER_Tonister34_cowhide", "B_LIB_GER_MedicBackpack_Empty"]];
+_militaryLoadoutData set ["backpacks", ["fow_b_grenadebag", "B_LIB_GER_SapperBackpack_empty", "B_LIB_GER_Backpack", "B_LIB_GER_Tonister34_cowhide", "B_LIB_GER_MedicBackpack_Empty", "B_LIB_GER_Radio_ACRE2", "B_LIB_GER_Panzer_Empty"]];
 _militaryLoadoutData set ["helmets", ["H_LIB_GER_Helmet","H_LIB_GER_Helmet_Glasses","H_LIB_GER_Helmet_net","H_LIB_GER_Helmet_ns","H_LIB_GER_Helmet_os", "H_LIB_GER_HelmetUtility_Grass"]];
 _militaryLoadoutData set ["sniHats", ["H_LIB_GER_HelmetUtility_Grass"]];
 _militaryLoadoutData set ["slHat", ["H_LIB_GER_OfficerCap"]];
@@ -355,6 +355,7 @@ _militaryLoadoutData set ["binoculars", ["LIB_Binocular_GER"]];
 
 _militaryLoadoutData set ["rifles", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]
     ]];
 
@@ -362,16 +363,20 @@ _militaryLoadoutData set ["carbines", [
 	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""],
+    ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""]
 	]];
 
 _militaryLoadoutData set ["SMGs", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_MP40", "", "", "", ["LIB_32Rnd_9x19","LIB_32Rnd_9x19","LIB_32rnd_9x19_t"], [], ""],
     ["LIB_MP40", "", "", "", ["LIB_32Rnd_9x19","LIB_32Rnd_9x19","LIB_32rnd_9x19_t"], [], ""]
     ]];
 
 _militaryLoadoutData set ["grenadeLaunchers", [
 	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_K98_Late", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57_t"], ["LIB_1Rnd_G_PZGR_40"], ""],
     ["LIB_K98_Late", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57_t"], ["LIB_1Rnd_G_PZGR_40"], ""]
     ]];
 
@@ -381,18 +386,18 @@ _militaryLoadoutData set ["machineGuns", [
 
 _militaryLoadoutData set ["marksmanRifles", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
-    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57","LIB_10Rnd_792x57","LIB_10Rnd_792x57_T","LIB_10Rnd_792x57_sS","LIB_10Rnd_792x57_T2"], [], ""],
     ["LIB_G41", "", "", "", ["LIB_10Rnd_792x57_clip"], [], ""]
     ]];
 
 _militaryLoadoutData set ["sniperRifles", [
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]
 	]];
 
 _militaryLoadoutData set ["sidearms", [
-    ["fow_w_p08", "", "", "", ["fow_8Rnd_9x19"], [], ""]
+    ["", "", "", "", [""], [], ""]
     ]];
 
 ///////////////////////////////
@@ -400,7 +405,7 @@ _militaryLoadoutData set ["sidearms", [
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_policeLoadoutData set ["uniforms", ["U_LIB_GER_Tank_crew_leutnant"]];
+_policeLoadoutData set ["uniforms", ["U_LIB_GER_Art_unterofficer"]];
 _policeLoadoutData set ["vests", ["V_LIB_WP_MP40Vest"]];
 _policeLoadoutData set ["helmets", ["H_LIB_GER_OfficerCap"]];
 _policeLoadoutData set ["SMGs", [
@@ -415,9 +420,9 @@ _policeLoadoutData set ["sidearms", [
 //    Militia Loadout Data    //
 ////////////////////////////////
 
-private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
+private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks // both bottom
 _militiaLoadoutData set ["uniforms", ["U_LIB_GER_Soldier2","U_LIB_GER_Recruit"]];
-_militiaLoadoutData set ["vests", ["V_LIB_WP_OfficerVest","V_LIB_WP_SniperBela", "V_LIB_WP_Kar98Vest", "V_LIB_WP_MGVest", "V_LIB_WP_MP40Vest"]];
+_militiaLoadoutData set ["vests", ["V_LIB_GER_FieldOfficer","V_LIB_GER_VestMG", "V_LIB_GER_VestKar98", "V_LIB_GER_VestMP40"]];
 _militiaLoadoutData set ["backpacks", ["fow_b_heer_ammo_belt", "fow_b_ammoboxes_mg34_42", "B_LIB_GER_A_frame_kit"]];
 _militiaLoadoutData set ["helmets", ["H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze"]];
 _militiaLoadoutData set ["sniHats", ["H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze"]];
@@ -426,16 +431,19 @@ _militiaLoadoutData set ["slHat", ["fow_h_ger_m38_feldmutze"]];
 _militiaLoadoutData set ["rifles", [
     ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""]
     ]];
 		
 _militiaLoadoutData set ["carbines", [
 	["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
 	["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""]
 	]]; 
 
 _militiaLoadoutData set ["grenadeLaunchers", [
+    ["LIB_K98", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57_t"], ["LIB_1Rnd_G_PZGR_30"], ""],
     ["LIB_K98", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57_t"], ["LIB_1Rnd_G_PZGR_30"], ""],
     ["LIB_K98", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57_t"], ["LIB_1Rnd_G_PZGR_30"], ""],
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""]
@@ -444,13 +452,15 @@ _militiaLoadoutData set ["grenadeLaunchers", [
 _militiaLoadoutData set ["SMGs", [
     ["LIB_MP38", "", "", "", ["LIB_32rnd_9x19_t"], [], ""],
     ["LIB_MP38", "", "", "", ["LIB_32rnd_9x19_t"], [], ""],
+    ["LIB_MP38", "", "", "", ["LIB_32rnd_9x19_t"], [], ""],
     ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""]
 	]];
 
 _militiaLoadoutData set ["shotguns", [
     ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
-    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""]
+    ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["fow_w_mg34", "", "", "", ["fow_50Rnd_792x57"], [], ""]
     ]];
 
 _militiaLoadoutData set ["machineGuns", [
@@ -461,13 +471,19 @@ _militiaLoadoutData set ["machineGuns", [
 _militiaLoadoutData set ["marksmanRifles", [
     ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
-    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""]
+    ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["fow_w_mg34", "", "", "", ["fow_50Rnd_792x57"], [], ""]
     ]];
 
 _militiaLoadoutData set ["sniperRifles", [
     ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
-    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""]
+    ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["LIB_K98", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+    ["fow_w_mg34", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["fow_w_mg34", "", "", "", ["fow_50Rnd_792x57"], [], ""]
 	]];
 
 _militiaLoadoutData set ["sidearms", [["", "", "", "", [""], [], ""]]];
