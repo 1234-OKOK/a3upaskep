@@ -292,20 +292,27 @@ _eliteLoadoutData set ["slHat", ["H_LIB_GER_OfficerCap"]];
 _eliteLoadoutData set ["binoculars", ["LIB_Binocular_GER"]];
 
 _eliteLoadoutData set ["rifles", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""]
     ]];
 
 _eliteLoadoutData set ["carbines", [
-	["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
+	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
 	["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""]
 	]];
 
 _eliteLoadoutData set ["SMGs", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""]
     ]];
 
 _eliteLoadoutData set ["grenadeLaunchers", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_MP44", "lib_acc_gw_sb_empty", "", "", ["LIB_30Rnd_792x33","LIB_30Rnd_792x33","LIB_30rnd_792x33_t"], ["LIB_1Rnd_G_PZGR_40"], ""],
 	["LIB_K98_Late", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57"], ["LIB_1Rnd_G_PZGR_40"], ""]
     ]];
@@ -315,11 +322,14 @@ _eliteLoadoutData set ["machineGuns", [
     ]];
 
 _eliteLoadoutData set ["marksmanRifles", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""]
     ]];
 
 _eliteLoadoutData set ["sniperRifles", [
-	["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
+	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57_T"], [], ""],
     ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]
 	]];
 
@@ -344,20 +354,25 @@ _militaryLoadoutData set ["slHat", ["H_LIB_GER_OfficerCap"]];
 _militaryLoadoutData set ["binoculars", ["LIB_Binocular_GER"]];
 
 _militaryLoadoutData set ["rifles", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]
     ]];
 
 _militaryLoadoutData set ["carbines", [
-	["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
+	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_K98_Late", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""],
     ["LIB_MP40", "", "", "", ["LIB_32rnd_9x19_t"], [], ""]
 	]];
 
 _militaryLoadoutData set ["SMGs", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_MP40", "", "", "", ["LIB_32Rnd_9x19","LIB_32Rnd_9x19","LIB_32rnd_9x19_t"], [], ""]
     ]];
 
 _militaryLoadoutData set ["grenadeLaunchers", [
-	["LIB_K98_Late", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57_t"], ["LIB_1Rnd_G_PZGR_40"], ""]
+	["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["LIB_K98_Late", "lib_acc_gw_sb_empty", "", "", ["LIB_5Rnd_792x57_t"], ["LIB_1Rnd_G_PZGR_40"], ""]
     ]];
 
 _militaryLoadoutData set ["machineGuns", [
@@ -365,11 +380,14 @@ _militaryLoadoutData set ["machineGuns", [
     ]];
 
 _militaryLoadoutData set ["marksmanRifles", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_G43", "", "", "", ["LIB_10Rnd_792x57","LIB_10Rnd_792x57","LIB_10Rnd_792x57_T","LIB_10Rnd_792x57_sS","LIB_10Rnd_792x57_T2"], [], ""],
     ["LIB_G41", "", "", "", ["LIB_10Rnd_792x57_clip"], [], ""]
     ]];
 
 _militaryLoadoutData set ["sniperRifles", [
+    ["fow_w_mg42", "", "", "", ["fow_50Rnd_792x57"], [], ""],
     ["LIB_K98ZF39", "", "", "", ["LIB_5Rnd_792x57_t"], [], ""]
 	]];
 
