@@ -46,9 +46,9 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 ["blackMarketStock", [  
 
-    ["LIB_UK_M3_Halftrack", 1500, "CAR", {tierWar > 1}],
-    ["FA_T17E1", 2000, "CAR", {tierWar > 1}],
-    ["FA_DaimlerMk2", 2500, "CAR", {tierWar > 1}],
+    ["LIB_UK_M3_Halftrack", 1500, "CAR", {tierWar > 2}],
+    ["FA_DaimlerMk2", 2000, "CAR", {tierWar > 3}],
+    ["FA_T17E1", 2500, "CAR", {tierWar > 3}],
     
     ["RP_LIB_M3A3_Stuart", 4000, "APC", {true}],
 
@@ -91,12 +91,13 @@ private _initialRebelEquipment = [
     "LIB_Bren_Mk2", "LIB_30Rnd_770x56_MKVIII",
     "LIB_PIAT_Rifle", "LIB_1Rnd_89m_PIAT", 
     "LIB_PIAT", "LIB_1Rnd_89m_G_PIAT",
-    "LIB_Bagpipes",
+    "LIB_Bagpipes", "M2_Flamethrower_01_F",
+    "fow_w_ithaca37", "fow_w_ithaca37",
     "LIB_MillsBomb", "LIB_No77", "LIB_No82", "LIB_US_M18", "LIB_US_M18_Green", "LIB_US_M18_Red", "LIB_US_M18_Yellow", "fow_e_tnt_halfpound",
     ["LIB_US_TNT_4pound_mag", 10], ["LIB_Ladung_Big_MINE_mag", 10], ["LIB_Ladung_Small_MINE_mag", 3], ["LIB_US_M1A1_ATMINE_mag", 3],
     "LIB_Binocular_UK", "LIB_GER_Gloves3", "LIB_GER_Headset",
-    "fow_v_uk_sten","fow_v_uk_bren", "fow_v_uk_para_base", "fow_v_uk_para_bren", "fow_v_uk_para_sten", "fow_v_uk_base", "fow_v_uk_officer",
-    "B_Carryall_khk", "B_FieldPack_khk", "fow_b_uk_bergenpack", "fow_b_uk_piat", "fow_b_uk_p37_shovel", "fow_b_uk_p37_radio", "fow_b_uk_p37"
+    "fow_v_uk_sten","fow_v_uk_bren", "fow_v_uk_para_base", "fow_v_uk_para_bren", "fow_v_uk_para_sten", "fow_v_uk_base", "fow_v_uk_officer", "fow_v_uk_sten_green", "fow_v_uk_bren_green", "fow_v_uk_para_base_green", "fow_v_uk_para_bren_green", "fow_v_uk_para_sten_green", "fow_v_uk_base_green", "fow_v_uk_officer_green",
+    "B_Carryall_khk", "B_FieldPack_khk", "fow_b_uk_bergenpack", "fow_b_uk_piat", "fow_b_uk_p37_shovel", "fow_b_uk_p37_radio", "fow_b_uk_p37", "41_Flammenwerfer_Balloons", "fow_b_parachute"
 ];
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
@@ -107,6 +108,9 @@ _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
+    "fow_u_uk_bd40_commando_01_private",
+    "fow_u_uk_bd40_kieffer_01",
+    "fow_u_uk_bd40_kieffer_02",
     "fow_u_uk_bd40_private",
     "fow_u_uk_bd40_lance_corporal",
     "fow_u_uk_bd40_corporal",
@@ -122,15 +126,22 @@ private _rebUniforms = [
     "fow_u_uk_bd40_bp_01_corporal",
     "fow_u_uk_bd40_bp_01_sergeant",
     "fow_u_uk_bd40_bp_01_lieutenant",
-    "fow_u_uk_bd40_commando_01_private",
     "fow_u_uk_bd40_pol_01_commando_private",
     "fow_u_uk_bd40_pol_02_commando_private",
     "fow_u_uk_bd40_pol_01_commando_lance_corporal",
     "fow_u_uk_bd40_pol_01_commando_corporal",
     "fow_u_uk_bd40_pol_01_commando_sergeant",
     "fow_u_uk_bd40_pol_01_commando_lieutenant",
-    "fow_u_uk_parasmock",
-    "fow_u_uk_pol_parasmock",
+    "fow_u_uk_bd40_can_01_private",
+    "fow_u_uk_bd40_can_01_lance_corporal",
+    "fow_u_uk_bd40_can_01_corporal",
+    "fow_u_uk_bd40_can_01_sergeant",
+    "fow_u_uk_bd40_can_01_lieutenant",
+    "fow_u_uk_bd40_can_02_private",
+    "fow_u_uk_bd40_can_02_lance_corporal",
+    "fow_u_uk_bd40_can_02_corporal",
+    "fow_u_uk_bd40_can_02_sergeant",
+    "fow_u_uk_bd40_can_02_lieutenant",
     "fow_u_aus_m37_02_private",
     "fow_u_aus_m37_03_private",
     "fow_u_aus_m37_01_private"
@@ -168,7 +179,15 @@ private _rebUniforms = [
     "fow_h_uk_woolen_hat02",
     "fow_h_uk_jungle_hat_03",
     "fow_h_uk_jungle_hat_01",
-    "fow_h_uk_jungle_hat_02"
+    "fow_h_uk_jungle_hat_02",
+    "H_LIB_UK_Helmet_Mk2",
+    "H_LIB_UK_Helmet_Mk2_Beachgroup",
+    "H_LIB_UK_Helmet_Mk2_Bowed",
+    "H_LIB_UK_Helmet_Mk2_Camo",
+    "H_LIB_UK_Helmet_Mk2_FAK_Camo",
+    "H_LIB_UK_Helmet_Mk2_FAK",
+    "H_LIB_UK_Helmet_Mk2_Net",
+    "H_LIB_UK_Pilot_Cap"
 ]] call _fnc_saveToTemplate;
 
 /////////////////////
