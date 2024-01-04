@@ -1,5 +1,23 @@
 class Templates {
     class 3CBF_Base;
+    class IFA3_WEHR : 3CBF_Base
+    {
+        side = "Occ";
+        flagTexture = "ww2\core_t\if_decals_t\german\flag_ger_co.paa";
+        name = "Wehrmacht"; 
+        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
+        file = "WEHR_occ.sqf";
+        description = "The Wehrmacht were the unified armed forces of Nazi Germany from 1935 to 1945";
+    };
+    class IFA3_PANZ : 3CBF_Base
+    {
+        side = "Inv";
+        flagTexture = "ww2\core_t\if_decals_t\german\flag_ger_co.paa";
+        name = "Panzer Elite"; 
+        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
+        file = "PANZ_inv.sqf";
+        description = "Originally established as Adolf Hitler's personal bodyguard unit. It would later become the elite guard of the Nazi Reich";
+    };
     class 3CBF_OFN : 3CBF_Base
     {
         side = "Reb";
@@ -63,23 +81,5 @@ class Templates {
         basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
         file = "BRI_Reb";
         description = "A small volunteer professional army";
-    };
-    class IFA3_WEHR : IFA3_BASE
-    {
-        side = "Occ";
-        flagTexture = "ww2\core_t\if_decals_t\german\flag_ger_co.paa";
-        name = "Wehrmacht"; 
-        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
-        file = "WEHR_occ.sqf";
-        description = "The Wehrmacht were the unified armed forces of Nazi Germany from 1935 to 1945";
-    };
-    class IFA3_PANZ : IFA3_BASE
-    {
-        side = "Inv";
-        flagTexture = "ww2\core_t\if_decals_t\german\flag_ger_co.paa";
-        name = "Panzer Elite"; 
-        basepath = QPATHTOFOLDER(Templates\SupaSkep); //the path to the template folder
-        file = "PANZ_inv.sqf";
-        description = "Originally established as Adolf Hitler's personal bodyguard unit. It would later become the elite guard of the Nazi Reich";
     };
 };
