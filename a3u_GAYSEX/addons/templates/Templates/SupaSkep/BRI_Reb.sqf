@@ -14,11 +14,11 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehiclesBasic", ["UNI_UK_Willys_MB_MM1", "UNI_UK_Willys_MB_Hood_MM1", "UNI_UK_Willys_MB_Hood_Medical_MM1", "UNI_UK_Willys_MB_Medical_MM1"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["UNI_UK_Willys_MB_Ambulance_MM1"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["UNI_UK_Willys_MB_M1919_MM1"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["fow_v_gmc_open_usa", "fow_v_gmc_usa", "LIB_UK_LCA"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["fow_v_gmc_open_usa", "fow_v_gmc_usa"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["fow_v_universalCarrier"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["LIB_US_NAC_Scout_M3_FFV", "LIB_MKI_HADRIAN", "LIB_HORSA_RAF", "LIB_C47_RAF"]] call _fnc_saveToTemplate;
 
-["vehiclesBoat", ["LIB_UK_LCI"]] call _fnc_saveToTemplate;
+["vehiclesBoat", ["LIB_LCVP"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlane", ["fow_va_f6f_faa"]] call _fnc_saveToTemplate;
 
@@ -52,14 +52,14 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     
     ["RP_LIB_M3A3_Stuart", 4000, "APC", {true}],
 
-    ["FA_ValentineMk3", 6000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["fow_v_cromwell_uk", 7000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["rp_LIB_M4A2_SOV", 7000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["LIB_Churchill_Mk7_Howitzer", 8000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["LIB_Churchill_Mk7_Crocodile", 8000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["LIB_Churchill_Mk7_AVRE", 8000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["LIB_Churchill_Mk7", 8000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["RP_LIB_M4A4_FIREFLY", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["FA_ValentineMk3", 5000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+    ["fow_v_cromwell_uk", 6000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["rp_LIB_M4A2_SOV", 6000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["LIB_Churchill_Mk7_Howitzer", 8000, "TANK", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["LIB_Churchill_Mk7_Crocodile", 8000, "TANK", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["LIB_Churchill_Mk7_AVRE", 8000, "TANK", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["LIB_Churchill_Mk7", 8000, "TANK", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
+    ["RP_LIB_M4A4_FIREFLY", 10000, "TANK", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
     ["LIB_MKI_HADRIAN", 1000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["LIB_HORSA_RAF", 1500, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
@@ -84,18 +84,19 @@ private _initialRebelEquipment = [
     "fow_w_leeenfield_no5mk1_junglecarbine", "fow_10Rnd_303",
     "LIB_DELISLE", "LIB_7Rnd_45ACP_DeLisle",
     "LIB_Sten_Mk2", "LIB_32Rnd_9x19_Sten",
-    "LIB_Sten_Mk5", "LIB_32Rnd_9x19_Sten",
+    "LIB_Sten_Mk5",
     "LIB_M1928A1_Thompson", "LIB_30Rnd_45ACP_t",
-    "LIB_M1A1_Thompson", "LIB_30Rnd_45ACP_t",
+    "LIB_M1A1_Thompson", 
     "fow_w_owen", "fow_33Rnd_9x19_owen",
     "LIB_Bren_Mk2", "LIB_30Rnd_770x56_MKVIII",
     "LIB_PIAT_Rifle", "LIB_1Rnd_89m_PIAT", 
     "LIB_PIAT", "LIB_1Rnd_89m_G_PIAT",
     "LIB_Bagpipes", "M2_Flamethrower_01_F",
-    "fow_w_ithaca37", "fow_w_ithaca37", "fow_5Rnd_12G_Pellets",
+    "LIB_M1928_Thompson", "LIB_50Rnd_45ACP", "M2_Fuel_Tank", "fow_g_gloves1", "fow_g_gloves3", "fow_g_glasses4", "G_LIB_Binoculars", "G_LIB_GER_Headset", "G_LIB_Scarf2_B", "G_LIB_Scarf2_G", "G_LIB_Scarf_B", "G_LIB_Scarf_G",
+    "fow_w_ithaca37", "fow_w_ithaca37", "fow_5Rnd_12G_Pellets", 
     "LIB_MillsBomb", "LIB_No77", "LIB_No82", "LIB_US_M18", "LIB_US_M18_Green", "LIB_US_M18_Red", "LIB_US_M18_Yellow", "fow_e_tnt_halfpound",
     ["LIB_US_TNT_4pound_mag", 10], ["LIB_Ladung_Big_MINE_mag", 10], ["LIB_Ladung_Small_MINE_mag", 3], ["LIB_US_M1A1_ATMINE_mag", 3],
-    "LIB_Binocular_UK", "LIB_GER_Gloves3", "LIB_GER_Headset",
+    "LIB_Binocular_UK", "LIB_GER_Gloves3", "LIB_GER_Headset", "ItemRadio",
     "fow_v_uk_sten","fow_v_uk_bren", "fow_v_uk_para_base", "fow_v_uk_para_bren", "fow_v_uk_para_sten", "fow_v_uk_base", "fow_v_uk_officer", "fow_v_uk_sten_green", "fow_v_uk_bren_green", "fow_v_uk_para_base_green", "fow_v_uk_para_bren_green", "fow_v_uk_para_sten_green", "fow_v_uk_base_green", "fow_v_uk_officer_green",
     "B_Carryall_khk", "B_FieldPack_khk", "fow_b_uk_bergenpack", "fow_b_uk_piat", "fow_b_uk_p37_shovel", "fow_b_uk_p37_radio", "fow_b_uk_p37", "M2_Flamethrower_Balloons_Pipe", "fow_b_parachute"
 ];
@@ -104,7 +105,7 @@ if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc15
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
-_initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
+_initialRebelEquipment append ["","","",""];
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
@@ -238,9 +239,9 @@ _loadoutData set ["binoculars", ["LIB_Binocular_UK"]];
 
 _loadoutData set ["uniforms", _rebUniforms];
 
-_loadoutData set ["glasses", ["G_LIB_Dienst_Brille", "G_LIB_Dienst_Brille2"]];
-_loadoutData set ["goggles", ["G_LIB_Dust_Goggles"]];
-_loadoutData set ["facemask", ["G_LIB_Headwrap", "G_LIB_Scarf2_B", "G_LIB_Scarf2_G", "G_LIB_Scarf_B", "G_LIB_Scarf_G"]];
+_loadoutData set ["glasses", ["fow_g_glasses4", "fow_g_gloves3", "fow_g_gloves1"]]; 
+_loadoutData set ["goggles", ["G_LIB_Binoculars", "G_LIB_GER_Headset"]];
+_loadoutData set ["facemask", ["G_LIB_Scarf2_B", "G_LIB_Scarf2_G", "G_LIB_Scarf_B", "G_LIB_Scarf_G"]];
 
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
 _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies];
