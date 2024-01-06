@@ -23,13 +23,13 @@
 ["vehiclesLightUnarmed", ["LIB_Kfz1_sernyt"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed",["LIB_Kfz1_MG42_sernyt"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["LIB_OpelBlitz_Open_Y_Camo", "LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["LIB_OpelBlitz_Ammo"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["LIB_OpelBlitz_Open_Y_Camo","LIB_OpelBlitz_Tent_Y_Camo"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["LIB_OpelBlitz_Fuel"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["LIB_OpelBlitz_Ambulance"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["fow_v_sdkfz_250_ger_heer","fow_v_sdkfz_250_camo_ger_heer", "fow_v_sdkfz_250_camo_foliage_ger_heer"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["LIB_SdKfz251","LIB_SdKfz251_FFV", "fow_v_sdkfz_250_9_ger_heer", "fow_v_sdkfz_250_9_camo_foliage_ger_heer", "fow_v_sdkfz_250_9_camo_ger_heer"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["LIB_SdKfz251","LIB_SdKfz251_FFV"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["fow_v_sdkfz_222_ger_heer","fow_v_sdkfz_222_foliage_ger_heer", "fow_v_sdkfz_222_camo_ger_heer", "fow_v_sdkfz_222_camo_foliage_ger_heer"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["FA_Sdkfz231", "FA_BA10M_Captured", "FA_BA64_Captured"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["LIB_PzKpfwVI_E", "rp_LIB_StuG_III_G", "rp_LIB_SdKfz124", "LIB_T34_76_captured", "LIB_SU85_base_captured"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["LIB_SdKfz_7_AA"]] call _fnc_saveToTemplate;
@@ -40,7 +40,7 @@
 ["vehiclesGunBoats", []] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["sab_sw_ju87_2", "sab_fl_ju88a", "sab_sw_he177", "sab_sw_bf110"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["sab_sw_ju87_2", "sab_fl_ju88a", "sab_sw_bf110"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["sab_fl_bf109e", "sab_fl_bf109f", "sab_fl_bf109g", "sab_fl_bf109k", "sab_fl_fw190a"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["sab_sw_he177"]] call _fnc_saveToTemplate;
 
@@ -146,7 +146,7 @@ _loadoutData set ["ATLaunchers", [
 _loadoutData set ["sidearms", []];
 
 _loadoutData set ["ATMines", ["LIB_TMI_42_MINE_mag"]];
-_loadoutData set ["APMines", ["LIB_shumine_42_MINE_mag"]];
+_loadoutData set ["APMines", ["LIB_TMI_42_MINE_mag"]];
 _loadoutData set ["lightExplosives", ["LIB_Ladung_Small_MINE_mag"]];
 _loadoutData set ["heavyExplosives", ["LIB_Ladung_Big_MINE_mag"]];
 
