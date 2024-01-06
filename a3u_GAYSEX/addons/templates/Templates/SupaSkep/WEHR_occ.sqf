@@ -445,8 +445,8 @@ private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch a
 _militiaLoadoutData set ["uniforms", ["U_LIB_GER_Soldier2","U_LIB_GER_Recruit"]];
 _militiaLoadoutData set ["vests", ["V_LIB_GER_FieldOfficer","V_LIB_GER_VestMG", "V_LIB_GER_VestKar98", "V_LIB_GER_VestMP40"]];
 _militiaLoadoutData set ["backpacks", ["fow_b_heer_ammo_belt", "fow_b_ammoboxes_mg34_42", "B_LIB_GER_A_frame_kit"]];
-_militiaLoadoutData set ["helmets", ["H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze"]];
-_militiaLoadoutData set ["sniHats", ["H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze"]];
+_militiaLoadoutData set ["helmets", ["H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze", "H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze", "H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"]];
+_militiaLoadoutData set ["sniHats", ["H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze", "H_LIB_GER_Cap", "Hat_WERM_SM_5", "fow_h_ger_m38_feldmutze", "H_HeadBandage_clean_F", "H_HeadBandage_stained_F", "H_HeadBandage_bloody_F"]];
 _militiaLoadoutData set ["slHat", ["fow_h_ger_m38_feldmutze"]];
 
 _militiaLoadoutData set ["rifles", [
