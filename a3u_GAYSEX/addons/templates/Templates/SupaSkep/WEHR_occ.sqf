@@ -356,7 +356,7 @@ _eliteLoadoutData set ["sniperRifles", [
 	]];
 
 _eliteLoadoutData set ["sidearms", [
-    ["fow_w_p08", "", "", "", ["fow_8Rnd_9x19"], [], ""]
+    ["", "", "", "", [""], [], ""]
     ]];		
 		
 /////////////////////////////////

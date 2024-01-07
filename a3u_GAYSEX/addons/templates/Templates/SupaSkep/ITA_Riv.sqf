@@ -186,7 +186,7 @@ _loadoutData set ["ATLaunchers", [
 ]];
 _loadoutData set ["lightHELaunchers", ["LIB_Faustpatrone"]];
 _loadoutData set ["AALaunchers", ["LIB_Faustpatrone"]];
-_loadoutData set ["sidearms", ["LIB_WaltherPPK", "LIB_TT33", "LIB_P38", "LIB_P08", "LIB_M1895"]];
+_loadoutData set ["sidearms", ["", "", "", "", "LIB_M1895"]];
 
 //////////////////////////
 //    Misc Loadouts     //
