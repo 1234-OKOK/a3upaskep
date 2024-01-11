@@ -44,8 +44,10 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
-["blackMarketStock", [  
+["blackMarketStock", [
+    ["LIB_61k", 1500, "STATICAA", {tierWar > 1}],
 
+    ["LIB_UK_LCI", 1000, "CAR", {tierWar > 2}],
     ["LIB_UK_M3_Halftrack", 1500, "CAR", {tierWar > 2}],
     ["FA_DaimlerMk2", 2000, "CAR", {tierWar > 3}],
     ["FA_T17E1", 2500, "CAR", {tierWar > 3}],
@@ -61,14 +63,11 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
     ["LIB_Churchill_Mk7", 8000, "TANK", {tierWar > 4 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
     ["RP_LIB_M4A4_FIREFLY", 10000, "TANK", {tierWar > 6 && {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}}],
 
-    ["LIB_MKI_HADRIAN", 1000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["LIB_HORSA_RAF", 1500, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["LIB_C47_RAF", 2000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["sab_fl_hurricane", 6000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["fow_va_f6f_c_faa", 8000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["LIB_RAF_P39", 8000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["sab_fl_dh98", 9000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["sab_sw_halifax", 10000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+    ["sab_fl_hurricane", 2000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["fow_va_f6f_c_faa", 3000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["LIB_RAF_P39", 3000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["sab_fl_dh98", 4000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+    ["sab_sw_halifax", 5000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ]] call _fnc_saveToTemplate;
 
 ///////////////////////////
